@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="375.0" style="-fx-background-color: A9EBE8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.DepartamentoController">
+    <children>
+        <ImageView fitHeight="81.0" fitWidth="341.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Rectangle_121.png" />
+            </image>
+        </ImageView>
+        <Pane fx:id="pane" layoutX="20.0" layoutY="229.0" prefHeight="558.0" prefWidth="335.0" style="-fx-background-color: ffffff;">
+            <children>
+                <Text fill="#673bb7" layoutX="29.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualización de los datos del departamento">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="29.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caracteristicas :">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="29.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dimensiones =" />
+                <Text layoutX="29.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baño individual =" />
+                <Text layoutX="29.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internet =" />
+                <Text layoutX="29.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semi amueblado =" />
+                <Text layoutX="29.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidad de personas =" />
+                <Text layoutX="29.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clima =" />
+                <Text layoutX="29.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubicación =" />
+                <Text layoutX="29.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota extra =" />
+                <Text layoutX="29.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de contacto =" />
+                <Label fx:id="salidaSemiAmuebladoDepartamento" layoutX="142.0" layoutY="267.0" prefHeight="17.0" prefWidth="183.0" />
+                <Label fx:id="salidaBañoIndividualDepartamento" layoutX="132.0" layoutY="167.0" prefHeight="17.0" prefWidth="183.0" />
+                <Label fx:id="salidaInternetDepartamento" layoutX="97.0" layoutY="217.0" prefHeight="17.0" prefWidth="204.0" />
+                <Label fx:id="salidaDimensionesDepartamento" layoutX="120.0" layoutY="118.0" prefHeight="17.0" prefWidth="197.0" />
+                <Label fx:id="salidaCapacidadDePersonasDepartamento" layoutX="179.0" layoutY="317.0" prefHeight="17.0" prefWidth="148.0" />
+                <Label fx:id="salidaClimaDepartamento" layoutX="100.0" layoutY="367.0" prefHeight="17.0" prefWidth="218.0" />
+                <Label fx:id="salidaUbicacionDepartamento" layoutX="110.0" layoutY="417.0" prefHeight="17.0" prefWidth="210.0" />
+                <Label fx:id="salidaNotaExtraDepartamento" layoutX="110.0" layoutY="467.0" prefHeight="17.0" prefWidth="214.0" />
+                <Label fx:id="salidaNumeroDeContactoDepartamento" layoutX="161.0" layoutY="517.0" prefHeight="17.0" prefWidth="156.0" />
+                <Label fx:id="salidaCaracteristicasDepartamento" layoutX="124.0" layoutY="67.0" prefHeight="17.0" prefWidth="197.0" />
+            </children>
+        </Pane>
+        <Text fill="#768c60" layoutX="40.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hose by Damo" />
+        <Text fill="#768c60" layoutX="43.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamentos" x="162.0" y="31.0">
+            <font>
+                <Font name="Microsoft Sans Serif" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="#673bb7" layoutX="46.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En House by DAMO tenemos la mejor selección de">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#673bb7" layoutX="132.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamentos  para ti" />
+        <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="45.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Home.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="86.0" fitWidth="38.0" layoutX="329.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Palz_Sitting_Chair.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

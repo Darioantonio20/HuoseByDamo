@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="812.0" prefWidth="330.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroController">
+    <children>
+        <Button fx:id="btnAltaUser" layoutX="90.0" layoutY="662.0" mnemonicParsing="false" onAction="#guardarDatos" prefHeight="48.0" prefWidth="195.0" style="-fx-background-color: A680E8 A680E8; -fx-background-radius: 40;" text="Dar de alta" textFill="WHITE">
+            <font>
+                <Font name="Microsoft Sans Serif" size="20.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="117.0" fitWidth="390.0" layoutX="-90.0" layoutY="-664.0" pickOnBounds="true" preserveRatio="true" x="90.0" y="662.0">
+            <image>
+                <Image url="@image/Rectangle.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="20.0" layoutY="118.0" prefHeight="29.0" prefWidth="296.0" text="Nombre(s)" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="199.0" prefHeight="33.0" prefWidth="296.0" text="Primer apellido" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="19.0" layoutY="511.0" prefHeight="29.0" prefWidth="296.0" text="Confirme su contraseña" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="19.0" layoutY="355.0" prefHeight="29.0" prefWidth="296.0" text="Correo electronico" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="19.0" layoutY="434.0" prefHeight="33.0" prefWidth="296.0" text="Contraseña" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="277.0" prefHeight="34.0" prefWidth="296.0" text="Segundo apellido" textFill="#673bb7">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idNewName" alignment="CENTER" layoutX="19.0" layoutY="155.0" prefHeight="37.0" prefWidth="334.0" promptText="Ingrese su nombre" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="idPrimerApellido" alignment="CENTER" layoutX="19.0" layoutY="232.0" prefHeight="39.0" prefWidth="336.0" promptText="Ingrese su primer apellido" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="idSegundoApellido" alignment="CENTER" layoutX="19.0" layoutY="311.0" prefHeight="38.0" prefWidth="336.0" promptText="Ingrese su segundo apellido" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="idCorreo" alignment="CENTER" layoutX="19.0" layoutY="388.0" prefHeight="39.0" prefWidth="336.0" promptText="Ingrese su correo electronico" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="idNewContraseña" alignment="CENTER" layoutX="20.0" layoutY="467.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="idConfirmarContraseña" alignment="CENTER" layoutX="20.0" layoutY="545.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su confirmación de contraseña" style="-fx-background-radius: 40;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="4.0" prefHeight="60.0" prefWidth="334.0" text="Registro" textAlignment="CENTER" textFill="#768c60">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="226.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/WomenPower_Keeping_in_Touch.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="812.0" prefWidth="372.0" style="-fx-background-color: A9EBE8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.HomePageController">
+    <children>
+        <ImageView fitHeight="74.44" fitWidth="335.0" layoutX="20.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Rectangle%20121.png" />
+            </image>
+        </ImageView>
+        <Text fill="#768c60" layoutX="20.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Huose by DAMO">
+            <font>
+                <Font name="Monaco" size="15.0" />
+            </font>
+        </Text>
+        <Text fill="#768c60" layoutX="160.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="chat">
+            <font>
+                <Font name="Monaco" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="#768c60" layoutX="208.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quejas o sugerencias">
+            <font>
+                <Font name="Monaco" size="12.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Home.png" />
+            </image>
+        </ImageView>
+        <Text fill="#673bb7" layoutX="15.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En Huose by Damo tenemos la mejor selección de" />
+        <Text fill="#673bb7" layoutX="16.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="inmuebles para usted, ajustando nuestros precios" />
+        <Text fill="#673bb7" layoutX="18.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a su prepuesto, buscando darle un hogar de" />
+        <Text fill="#673bb7" layoutX="19.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de calidad para que usted se sienta en casa." />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="285.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/Palz_Sitting_Chair.png" />
+            </image>
+        </ImageView>
+        <Pane fx:id="idCasa" layoutX="20.0" layoutY="229.0" prefHeight="202.0" prefWidth="335.0" style="-fx-background-color: ffffff;">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="79.0" layoutX="100.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Casa_exterior.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="79.0" layoutX="200.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Casa_interior.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#81a65d" layoutX="20.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casa">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                    </font>
+                </Text>
+                <Label fx:id="idLabelTituloCasa" layoutX="20.0" layoutY="116.0" text="Titulo" textFill="#81a65d">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="idCaracteristicasCasa" layoutX="20.0" layoutY="138.0" text="caracteristicas">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="idDepartamento" layoutX="20.0" layoutY="539.0" prefHeight="202.0" prefWidth="335.0" style="-fx-background-color: ffffff;">
+            <children>
+                <ImageView fitHeight="61.0" fitWidth="65.0" layoutX="120.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Departamento_exterior.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="79.0" layoutX="185.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Departamento_interior.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#673bb7" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamentos">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                    </font>
+                </Text>
+                <Label fx:id="labelTituloDepa" layoutX="5.0" layoutY="116.0" text="Titulo" textFill="#9a79d4">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="idLabelCaracteristicas" layoutX="5.0" layoutY="138.0" text="caracteristicas">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="13.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnMasDepartamentos" layoutX="220.0" layoutY="189.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#infoDepartamentos" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #9A79D4;" text="Ver mas departamentos" textFill="WHITE">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="btnMasCasa" layoutX="237.0" layoutY="415.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#infoCasa" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #6A973D;" text="Ver mas casas" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
