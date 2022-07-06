@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,11 +17,6 @@
             </font>
         </Label>
         <TextField fx:id="userName" alignment="CENTER" layoutX="20.0" layoutY="235.0" prefHeight="48.0" prefWidth="335.0" promptText="Ingrese su nombre de usuario" style="-fx-background-radius: 40;">
-            <font>
-                <Font size="16.0" />
-            </font>
-        </TextField>
-        <TextField fx:id="password" alignment="CENTER" layoutX="20.0" layoutY="362.0" prefHeight="48.0" prefWidth="335.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
             <font>
                 <Font size="16.0" />
             </font>
@@ -50,5 +46,10 @@
                 <Font name="PT Mono Bold" size="28.0" />
             </font>
         </Label>
+      <PasswordField fx:id="pass" alignment="CENTER" layoutX="20.0" layoutY="362.0" maxWidth="335.0" prefHeight="48.0" prefWidth="334.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
     </children>
 </AnchorPane>

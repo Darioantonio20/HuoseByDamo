@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -70,16 +71,6 @@
                 <Font size="16.0" />
             </font>
         </TextField>
-        <TextField fx:id="idNewContraseña" alignment="CENTER" layoutX="20.0" layoutY="467.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
-            <font>
-                <Font size="16.0" />
-            </font>
-        </TextField>
-        <TextField fx:id="idConfirmarContraseña" alignment="CENTER" layoutX="20.0" layoutY="545.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su confirmación de contraseña" style="-fx-background-radius: 40;">
-            <font>
-                <Font size="16.0" />
-            </font>
-        </TextField>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="4.0" prefHeight="60.0" prefWidth="334.0" text="Registro" textAlignment="CENTER" textFill="#768c60">
             <font>
                 <Font size="32.0" />
@@ -90,5 +81,15 @@
                 <Image url="@image/WomenPower_Keeping_in_Touch.png" />
             </image>
         </ImageView>
+      <PasswordField fx:id="idPass" alignment="CENTER" layoutX="19.0" layoutY="470.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="idConfirmacionPass" alignment="CENTER" layoutX="20.0" layoutY="545.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese la confirmación de su contraseña" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
     </children>
 </AnchorPane>
