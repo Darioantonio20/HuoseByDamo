@@ -14,33 +14,35 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class RegistroController {
+
     @FXML
     private Button btnAltaUser;
 
     @FXML
-    private PasswordField idConfirmacionPass;
+    private TextField idApellidos;
 
     @FXML
-    private TextField idCorreo;
+    private PasswordField idContraseña;
 
     @FXML
-    private TextField idNewName;
+    private TextField idCorreoElectronico;
 
     @FXML
-    private PasswordField idPass;
+    private TextField idNombreDeUsuario;
 
     @FXML
-    private TextField idPrimerApellido;
+    private TextField idNombres;
 
     @FXML
-    private TextField idSegundoApellido;
+    private PasswordField idNumeroDeContacto;
 
     @FXML
     void btnDarDeAltaOnMouseClicked(MouseEvent event) {
 
     }
 
-        @FXML
+
+    @FXML
     void guardarDatos(ActionEvent event) throws IOException {
         Stage primaryStage= new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/home-page-view.fxml"));
