@@ -1,10 +1,16 @@
 package com.upchiapas.huosebydamo.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 public class DepartamentoController {
+
+    @FXML
+    private Button btnsalida;
 
     @FXML
     private Pane pane;
@@ -38,5 +44,11 @@ public class DepartamentoController {
 
     @FXML
     private Label salidaUbicacionDepartamento;
+
+    @FXML
+    void closePage(ActionEvent event) {
+        Stage stage = (Stage) this.btnsalida.getScene().getWindow();
+        stage.close();
+    }
 
 }

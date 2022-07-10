@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="812.0" prefWidth="330.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroController">
     <children>
-        <Button fx:id="btnAltaUser" layoutX="90.0" layoutY="662.0" mnemonicParsing="false" onAction="#guardarDatos" prefHeight="48.0" prefWidth="195.0" style="-fx-background-color: A680E8 A680E8; -fx-background-radius: 40;" text="Dar de alta" textFill="WHITE">
+        <Button fx:id="btnAltaUser" layoutX="90.0" layoutY="662.0" mnemonicParsing="false" onAction="#guardarDatos" onMouseClicked="#btnDarDeAltaOnMouseClicked" prefHeight="48.0" prefWidth="195.0" style="-fx-background-color: A680E8 A680E8; -fx-background-radius: 40;" text="Dar de alta" textFill="WHITE">
             <font>
                 <Font name="Microsoft Sans Serif" size="20.0" />
             </font>

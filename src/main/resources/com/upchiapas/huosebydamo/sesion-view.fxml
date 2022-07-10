@@ -26,7 +26,7 @@
                 <Font name="Microsoft Sans Serif" size="24.0" />
             </font>
         </Label>
-        <Button fx:id="btnEntrada" layoutX="90.0" layoutY="481.0" mnemonicParsing="false" onAction="#ingresarHome" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
+        <Button fx:id="btnEntrada" layoutX="90.0" layoutY="481.0" mnemonicParsing="false" onAction="#ingresarHome" onMouseClicked="#btnEntradaOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="20.0" />
             </font>
