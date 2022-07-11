@@ -36,7 +36,8 @@ public class RegistroController {
     private TextField idNombres;
 
     @FXML
-    private PasswordField idNumeroDeContacto;
+    private TextField idNumeroDeContacto;
+
 
     @FXML
     void btnDarDeAltaOnMouseClicked(MouseEvent event) {

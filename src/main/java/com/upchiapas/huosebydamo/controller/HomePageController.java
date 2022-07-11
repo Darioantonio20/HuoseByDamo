@@ -32,12 +32,28 @@ public class HomePageController {
     private Pane idDepartamento;
 
     @FXML
-    void registrarCasa(ActionEvent event) {
+    void registrarCasa(ActionEvent event) throws IOException {
+
+        Stage primaryStage= new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/registrar-casa-view.fxml"));
+
+        primaryStage.setTitle("Inmoviliaria DAMO");
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
 
     }
 
     @FXML
-    void registrarDepartamento(ActionEvent event) {
+    void registrarDepartamento(ActionEvent event) throws IOException {
+
+        Stage primaryStage= new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/registrar-departamento-view.fxml"));
+
+        primaryStage.setTitle("Inmoviliaria DAMO");
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
 
     }
 

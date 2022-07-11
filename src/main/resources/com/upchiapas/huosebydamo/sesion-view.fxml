@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.InicioSesionController">
+<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroDepartamentoController">
     <children>
         <Label layoutX="20.0" layoutY="192.0" prefHeight="27.0" prefWidth="335.0" text="Nombre de usuario" textFill="#673bb7">
             <font>

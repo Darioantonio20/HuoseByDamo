@@ -86,10 +86,10 @@
             <Font size="16.0" />
          </font>
       </PasswordField>
-      <PasswordField fx:id="idNumeroDeContacto" alignment="CENTER" layoutX="21.0" layoutY="389.0" prefHeight="38.0" prefWidth="335.0" promptText="Ingrese su número de contacto" style="-fx-background-radius: 40;">
+      <TextField fx:id="idNumeroDeContacto" alignment="CENTER" layoutX="18.0" layoutY="387.0" prefHeight="39.0" prefWidth="336.0" promptText="Ingrese su número" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
-      </PasswordField>
+      </TextField>
     </children>
 </AnchorPane>
