@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,37 +17,9 @@
             </image>
         </ImageView>
         <Pane fx:id="pane" layoutX="20.0" layoutY="229.0" prefHeight="558.0" prefWidth="335.0" style="-fx-background-color: ffffff;">
-            <children>
-                <Text fill="#673bb7" layoutX="29.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualización de los datos del departamento">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Text>
-                <Text layoutX="29.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caracteristicas :">
-                    <font>
-                        <Font size="12.0" />
-                    </font>
-                </Text>
-                <Text layoutX="29.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dimensiones =" />
-                <Text layoutX="29.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baño individual =" />
-                <Text layoutX="29.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internet =" />
-                <Text layoutX="29.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semi amueblado =" />
-                <Text layoutX="29.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidad de personas =" />
-                <Text layoutX="29.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clima =" />
-                <Text layoutX="29.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubicación =" />
-                <Text layoutX="29.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota extra =" />
-                <Text layoutX="29.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de contacto =" />
-                <Label fx:id="salidaSemiAmuebladoDepartamento" layoutX="142.0" layoutY="267.0" prefHeight="17.0" prefWidth="183.0" />
-                <Label fx:id="salidaBañoIndividualDepartamento" layoutX="132.0" layoutY="167.0" prefHeight="17.0" prefWidth="183.0" />
-                <Label fx:id="salidaInternetDepartamento" layoutX="97.0" layoutY="217.0" prefHeight="17.0" prefWidth="204.0" />
-                <Label fx:id="salidaDimensionesDepartamento" layoutX="120.0" layoutY="118.0" prefHeight="17.0" prefWidth="197.0" />
-                <Label fx:id="salidaCapacidadDePersonasDepartamento" layoutX="179.0" layoutY="317.0" prefHeight="17.0" prefWidth="148.0" />
-                <Label fx:id="salidaClimaDepartamento" layoutX="100.0" layoutY="367.0" prefHeight="17.0" prefWidth="218.0" />
-                <Label fx:id="salidaUbicacionDepartamento" layoutX="110.0" layoutY="417.0" prefHeight="17.0" prefWidth="210.0" />
-                <Label fx:id="salidaNotaExtraDepartamento" layoutX="110.0" layoutY="467.0" prefHeight="17.0" prefWidth="214.0" />
-                <Label fx:id="salidaNumeroDeContactoDepartamento" layoutX="161.0" layoutY="517.0" prefHeight="17.0" prefWidth="156.0" />
-                <Label fx:id="salidaCaracteristicasDepartamento" layoutX="124.0" layoutY="67.0" prefHeight="17.0" prefWidth="197.0" />
-            </children>
+         <children>
+            <TextArea fx:id="txtAreaDepartamentos" layoutX="-2.0" prefHeight="558.0" prefWidth="341.0" />
+         </children>
         </Pane>
         <Text fill="#768c60" layoutX="40.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hose by Damo" />
         <Text fill="#768c60" layoutX="43.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamentos" x="162.0" y="31.0">
