@@ -4,10 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class CasaController {
+
+    @FXML
+    private Button btnMostrarCasa;
 
     @FXML
     private Button btnSalida;
@@ -16,7 +20,13 @@ public class CasaController {
     private Pane pane;
 
     @FXML
-    public static TextArea textArea;
+    private TextArea textArea;
+
+    @FXML
+    void btnMostrarCasaOnClickedMouse(MouseEvent event) {
+
+    }
+
 
     @FXML
     void closePage(ActionEvent event) {

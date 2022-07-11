@@ -15,13 +15,13 @@ public class RegistroDepartamentoController {
     private Button btnRegistroDeDepartamento;
 
     @FXML
-    private PasswordField idBañosDepartamento;
+    private TextField idBañosDepartamento;
 
     @FXML
     private TextField idCapacidadMaximaDepartamento;
 
     @FXML
-    private PasswordField idClimaDepartamento;
+    private TextField idClimaDepartamento;
 
     @FXML
     private TextField idDimencionesDepartamento;
@@ -30,13 +30,13 @@ public class RegistroDepartamentoController {
     private TextField idInternetDepartamento;
 
     @FXML
-    private PasswordField idNotaExtraDepartamento;
+    private TextField idNotaExtraDepartamento;
 
     @FXML
-    private PasswordField idNumeroDeContactoDepartamento;
+    private TextField idNumeroDeContactoDepartamento;
 
     @FXML
-    private PasswordField idSemiAmuebladoDepartamento;
+    private TextField idSemiAmuebladoDepartamento;
 
     @FXML
     private TextField idUbicacionDepartamento;

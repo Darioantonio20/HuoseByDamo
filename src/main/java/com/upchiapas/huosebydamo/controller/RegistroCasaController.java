@@ -5,7 +5,6 @@ import com.upchiapas.huosebydamo.controller.models.Casa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
@@ -18,25 +17,25 @@ public class RegistroCasaController {
     private TextField idAreaDeLavadoCasa;
 
     @FXML
-    private PasswordField idCantidadDeBañosCasa;
+    private TextField idCantidadDeBañosCasa;
 
     @FXML
-    private PasswordField idCocheraCasa;
+    private TextField idCocheraCasa;
 
     @FXML
     private TextField idDimencionesCasa;
 
     @FXML
-    private PasswordField idNotaExtraCasa;
+    private TextField idNotaExtraCasa;
 
     @FXML
-    private PasswordField idNumeroDeContactoCasa;
+    private TextField idNumeroDeContactoCasa;
 
     @FXML
     private TextField idNumeroDeCuartosCasa;
 
     @FXML
-    private PasswordField idNumeroDePisosCasa;
+    private TextField idNumeroDePisosCasa;
 
     @FXML
     private TextField idUbicacionCasa;
