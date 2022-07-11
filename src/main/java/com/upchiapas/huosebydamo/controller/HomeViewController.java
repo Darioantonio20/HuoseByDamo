@@ -10,12 +10,24 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+
 public class HomeViewController {
+
     @FXML
     private Button btnIniciarSesion;
 
     @FXML
     private Button btnRegistrate;
+
+    @FXML
+    void btnIniciarSesionOnClicked(MouseEvent event) {
+
+    }
 
     @FXML
     void registroAhora(ActionEvent event) throws IOException {
@@ -38,4 +50,7 @@ public class HomeViewController {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
+
 }
+
+
