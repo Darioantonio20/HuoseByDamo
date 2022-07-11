@@ -98,26 +98,18 @@ public class Departamento {
     @Override
     public String toString() {
         return
-                        "|///////////////////////////////////////////////////////////////////////\n" +
-                        "|                                            Departamento                              " +"\n\n"+
-                        "| Dimensiones =-:-:-= " + dimensiones + "\n"+
-                        "|\n" +
-                        "| Baños =-:-:-= " + baños +"\n"+
-                        "|\n" +
-                        "| Internet =-:-:-= " + internet +"\n"+
-                        "|\n" +
-                        "| Semi-amueblabo =-:-:-= " + semiamublado +"\n"+
-                        "|\n" +
-                        "| Limite de personas =-:-:-= " + limiteDePersonas + "\n"+
-                        "|\n" +
-                        "| Clima =-:-:-= " + clima + "\n"+
-                        "|\n" +
-                        "| Úbicacion =-:-:-=" + ubicacion + "\n"+
-                        "|\n" +
-                        "| Nota extra =-:-:-= " + notaExtra + "\n"+
-                        "|\n" +
-                        "| Número de contacto =-:-:-= " + numeroCotacto +"\n"+
-                        "|///////////////////////////////////////////////////////////////////////";
+                        "///////////////////////////////////////////////////////////////////////////////////////////////\n" +
+                        "                                            Departamento                              " +"\n\n"+
+                        " Dimensiones  =-:-:-=  " + dimensiones + "\n"+
+                        " Baños  =-:-:-=  " + baños +"\n"+
+                        " Internet  =-:-:-=  " + internet +"\n"+
+                        " Semi-amueblabo  =-:-:-=  " + semiamublado +"\n"+
+                        " Limite de personas  =-:-:-=  " + limiteDePersonas + "\n"+
+                        " Clima  =-:-:-=  " + clima + "\n"+
+                        " Úbicacion  =-:-:-=  " + ubicacion + "\n"+
+                        " Nota extra  =-:-:-=  " + notaExtra + "\n"+
+                        " Número de contacto  =-:-:-=  " + numeroCotacto + "\n" + "\n" +
+                        "///////////////////////////////////////////////////////////////////////////////////////////////";
 
     }
 }

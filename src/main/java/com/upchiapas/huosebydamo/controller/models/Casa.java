@@ -98,25 +98,17 @@ public class Casa {
     @Override
     public String toString() {
 
-        return  "|///////////////////////////////////////////////////////////////////////\n" +
-                "|                                                Casa                                    " + "\n" + "|\n" +
-                "| Dimensiones =-:-:-= " + dimensiones + "\n"+
-                "|\n" +
-                "| Pisos =-:-:-= " + pisos +"\n"+
-                "|\n" +
-                "| Cuartos =-:-:-= " + cuartos +"\n"+
-                "|\n" +
-                "| Baños =-:-:-= " + baños +"\n"+
-                "|\n" +
-                "| Área de lavado =-:-:-= " + arealavado + "\n"+
-                "|\n" +
-                "| Cochera =-:-:-= " + cochera + "\n"+
-                "|\n" +
-                "| Ubicacion =-:-:-= " + ubicacion + "\n"+
-                "|\n" +
-                "| Nota extra =-:-:-= " + notaExtra + "\n"+
-                "|\n" +
-                "| Número de contacto =-:-:-= " + numeroContacto +"\n"+
-                "|///////////////////////////////////////////////////////////////////////";
+        return  "//////////////////////////////////////////////////////////////////////////////////////\n" +
+                "                                                Casa                                     " + "\n" + "|\n" +
+                " Dimensiones  =-:-:-=  " + dimensiones + "\n"+
+                " Pisos =-:-:-=  " + pisos +"\n"+
+                " Cuartos  =-:-:-=  " + cuartos +"\n"+
+                " Baños  =-:-:-=  " + baños +"\n"+
+                " Área de lavado  =-:-:-=  " + arealavado + "\n"+
+                " Cochera  =-:-:-= " + cochera + "\n"+
+                " Ubicacion  =-:-:-=  " + ubicacion + "\n"+
+                " Nota extra  =-:-:-=  " + notaExtra + "\n"+
+                " Número de contacto  =-:-:-=  " + numeroContacto + "\n" + "\n" +
+                "//////////////////////////////////////////////////////////////////////////////////////";
     }
 }
