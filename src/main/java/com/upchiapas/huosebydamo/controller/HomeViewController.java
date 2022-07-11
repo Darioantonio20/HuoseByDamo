@@ -44,7 +44,6 @@ public class HomeViewController {
     void sesionIniciar(ActionEvent event) throws IOException {
         Stage primaryStage= new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/sesion-view.fxml"));
-
         primaryStage.setTitle("Datos iniciar sesión");
 
         primaryStage.setScene(new Scene(root));
