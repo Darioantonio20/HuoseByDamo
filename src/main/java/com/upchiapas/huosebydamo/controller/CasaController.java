@@ -16,7 +16,7 @@ public class CasaController {
     private Pane pane;
 
     @FXML
-    private TextArea textArea;
+    public static TextArea textArea;
 
     @FXML
     void closePage(ActionEvent event) {
