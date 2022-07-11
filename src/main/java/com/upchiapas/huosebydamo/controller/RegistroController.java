@@ -1,5 +1,7 @@
 package com.upchiapas.huosebydamo.controller;
 
+import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
+import com.upchiapas.huosebydamo.controller.models.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,6 +40,17 @@ public class RegistroController {
 
     @FXML
     void btnDarDeAltaOnMouseClicked(MouseEvent event) {
+        String nombre = idNombres.getText();
+        String apellidos = idApellidos.getText();
+        String correoElectronico = idCorreoElectronico.getText();
+        String numeroTelefono = idNumeroDeContacto.getText();
+        String nombreUsuario = idNombreDeUsuario.getText();
+        String contraseña = idContraseña.getText();
+        Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
+        Almacenamiento.datausers.add(user);
+        /*for (int i=0; i<Almacenamiento.datausers.size();i++){
+            System.out.println(Almacenamiento.datausers.get(i).getNombre());
+        }*/
 
     }
 
