@@ -27,7 +27,7 @@ public class InicioSesionController {
 
     @FXML
     void btnEntradaOnMouseClicked(MouseEvent event) {
-        ValidateUser user = new ValidateUser();
+        /*ValidateUser user = new ValidateUser();
         if (user.autenticarUser(userName.getText(), pass.getText())){
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -42,7 +42,7 @@ public class InicioSesionController {
             alert.setContentText("Él usuario no está registrado ó no existe");
             alert.showAndWait();
 
-        }
+        }*/
     }
 
     @FXML

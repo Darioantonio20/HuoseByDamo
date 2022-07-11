@@ -70,7 +70,7 @@
                         <Font name="Microsoft Sans Serif" size="16.0" />
                     </font>
                 </Text>
-                <Button fx:id="btnVisualizarCasa" layoutX="216.0" layoutY="189.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#visualizacionCasa" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #9A79D4;" text="Casa" textFill="WHITE">
+                <Button fx:id="btnVisualizarCasa" layoutX="216.0" layoutY="189.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#visualizacionCasa" onMouseClicked="#btnVisualizarCasaOnMouseClicked" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #9A79D4;" text="Casa" textFill="WHITE">
                     <font>
                         <Font size="10.0" />
                     </font>
@@ -80,7 +80,7 @@
                   <Image url="@image/Copoya.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnVisualizarDepartamento" layoutY="190.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#visualizacionDepartamentos" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #9A79D4;" text="Departamento" textFill="WHITE">
+            <Button fx:id="btnVisualizarDepartamento" layoutY="190.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onAction="#visualizacionDepartamentos" onMouseClicked="#btnVisualizarDepartamentoOnMouseClicked" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #9A79D4;" text="Departamento" textFill="WHITE">
                <font>
                   <Font size="10.0" />
                </font>
