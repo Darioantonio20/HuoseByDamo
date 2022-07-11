@@ -40,7 +40,7 @@ public class RegistroDepartamentoController {
     private TextField idUbicacionDepartamento;
 
     @FXML
-    void btnEntradaOnMouseClicked(MouseEvent event) {
+    void btnRegistroDepartamentoOnMouseClicked(MouseEvent event) {
 
     }
 

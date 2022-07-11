@@ -26,7 +26,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegistroDeDepartamento" layoutX="91.0" layoutY="702.0" mnemonicParsing="false" onAction="#ingresarHome" onMouseClicked="#btnEntradaOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnRegistroDeDepartamento" layoutX="66.0" layoutY="701.0" mnemonicParsing="false" onAction="#ingresarHome" onMouseClicked="#btnRegistroDepartamentoOnMouseClicked" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar departamento" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
