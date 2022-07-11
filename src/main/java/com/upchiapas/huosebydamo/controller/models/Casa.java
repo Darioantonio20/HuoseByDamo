@@ -98,17 +98,17 @@ public class Casa {
     @Override
     public String toString() {
 
-        return  "//////////////////////////////////////////////////////////////////////////////////////\n" +
-                "                                                Casa                                     " + "\n" + "|\n" +
+        return  "///////////////////////////////////////////////////////////////////////////////////////////\n" +
+                "                                                Casa                                     " + "\n" + "\n" +
                 " Dimensiones  =-:-:-=  " + dimensiones + "\n"+
-                " Pisos =-:-:-=  " + pisos +"\n"+
-                " Cuartos  =-:-:-=  " + cuartos +"\n"+
-                " Baños  =-:-:-=  " + baños +"\n"+
-                " Área de lavado  =-:-:-=  " + arealavado + "\n"+
-                " Cochera  =-:-:-= " + cochera + "\n"+
+                " Número de pisos =-:-:-=  " + pisos +"\n"+
+                " Número de cuartos  =-:-:-=  " + cuartos +"\n"+
+                " Número de baños  =-:-:-=  " + baños +"\n"+
+                " Tiene área de lavado  =-:-:-=  " + arealavado + "\n"+
+                " Tiene cochera  =-:-:-= " + cochera + "\n"+
                 " Ubicacion  =-:-:-=  " + ubicacion + "\n"+
                 " Nota extra  =-:-:-=  " + notaExtra + "\n"+
-                " Número de contacto  =-:-:-=  " + numeroContacto + "\n" + "\n" +
-                "//////////////////////////////////////////////////////////////////////////////////////";
+                " Número de contacto del arrendador  =-:-:-=  " + numeroContacto + "\n" + "\n" +
+                "//////////////////////////////////////////////////////////////////////////////////////////";
     }
 }
