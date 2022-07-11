@@ -1,27 +1,29 @@
 package com.upchiapas.huosebydamo.controller;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class HomePageController {
-    @FXML
-    private Button btnMasCasa;
 
     @FXML
-    private Button btnMasDepartamentos;
+    private Button btnRegistrarCasa;
 
     @FXML
-    private Label idCaracteristicasCasa;
+    private Button btnRegistrarDepartamento;
+
+    @FXML
+    private Button btnVisualizarCasa;
+
+    @FXML
+    private Button btnVisualizarDepartamento;
 
     @FXML
     private Pane idCasa;
@@ -30,16 +32,17 @@ public class HomePageController {
     private Pane idDepartamento;
 
     @FXML
-    private Label idLabelCaracteristicas;
+    void registrarCasa(ActionEvent event) {
+
+    }
 
     @FXML
-    private Label idLabelTituloCasa;
+    void registrarDepartamento(ActionEvent event) {
+
+    }
 
     @FXML
-    private Label labelTituloDepa;
-
-    @FXML
-    void infoCasa(ActionEvent event) throws IOException {
+    void visualizacionCasa(ActionEvent event) throws IOException {
 
         Stage primaryStage= new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/casa-view.fxml"));
@@ -52,7 +55,7 @@ public class HomePageController {
     }
 
     @FXML
-    void infoDepartamentos(ActionEvent event) throws IOException {
+    void visualizacionDepartamentos(ActionEvent event) throws IOException {
 
         Stage primaryStage= new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/departamento-view.fxml"));
@@ -61,5 +64,37 @@ public class HomePageController {
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+
+    }
+
+}
+
+
+
+
+  /*  @FXML
+    void infoCasa(ActionEvent event) throws IOException {
+
+        Stage primaryStage= new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource(""));
+
+        primaryStage.setTitle("Inmoviliaria DAMO");
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+
+    }
+
+    @FXML
+    void infoDepartamentos(ActionEvent event) throws IOException {
+
+        Stage primaryStage= new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/casa-view.fxml"));
+
+        primaryStage.setTitle("Inmoviliaria DAMO");
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }
+*/
