@@ -47,7 +47,7 @@ public class RegistroDepartamentoController {
         String baños = idBañosDepartamento.getText();
         String internet = idInternetDepartamento.getText();
         String semiamublado = idSemiAmuebladoDepartamento.getText();
-        byte limiteDePersonas = Byte.valueOf(idClimaDepartamento.getText());
+        byte limiteDePersonas = Byte.valueOf(idCapacidadMaximaDepartamento.getText());
         String clima = idClimaDepartamento.getText();
         String ubicacion = idUbicacionDepartamento.getText();
         String notaExtra = idNotaExtraDepartamento.getText();

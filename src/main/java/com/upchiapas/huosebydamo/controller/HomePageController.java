@@ -87,10 +87,6 @@ public class HomePageController {
 
     @FXML
     void btnVisualizarCasaOnMouseClicked(MouseEvent event) {
-        for (int i = 0; i< Almacenamiento.casas.size(); i++){
-            CasaController.textArea.setText(Almacenamiento.casas.get(i).toString());
-            System.out.println(Almacenamiento.casas.get(i).toString());
-        }
 
     }
 

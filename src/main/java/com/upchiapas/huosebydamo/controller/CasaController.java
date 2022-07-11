@@ -1,5 +1,6 @@
 package com.upchiapas.huosebydamo.controller;
 
+import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -24,6 +25,13 @@ public class CasaController {
 
     @FXML
     void btnMostrarCasaOnClickedMouse(MouseEvent event) {
+        String fulltext = "";
+        for (int i = 0; i< Almacenamiento.casas.size(); i++){
+            //txtAreaDepartamentos.setText(Almacenamiento.departamentos.get(i).toString());
+            fulltext += Almacenamiento.casas.get(i).toString();
+            System.out.println(Almacenamiento.casas.get(i).toString());
+        }
+        textArea.setText(fulltext);
 
     }
 

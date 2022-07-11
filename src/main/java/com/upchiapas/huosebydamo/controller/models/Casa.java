@@ -97,16 +97,16 @@ public class Casa {
 
     @Override
     public String toString() {
-        return "Casa{" +
-                "dimensiones=" + dimensiones +
-                ", pisos=" + pisos +
-                ", cuartos=" + cuartos +
-                ", baños=" + baños +
-                ", arealavado='" + arealavado + '\'' +
-                ", cochera='" + cochera + '\'' +
-                ", ubicacion='" + ubicacion + '\'' +
-                ", notaExtra='" + notaExtra + '\'' +
-                ", numeroContacto='" + numeroContacto + '\'' +
-                '}';
+        return "Casa:" +"\n"+
+                "dimensiones: " + dimensiones + "\n"+
+                "pisos: " + pisos +"\n"+
+                "cuartos: " + cuartos +"\n"+
+                "baños " + baños +"\n"+
+                "arealavado " + arealavado + "\n"+
+                "cochera:" + cochera + "\n"+
+                "ubicacion: " + ubicacion + "\n"+
+                "notaExtra: " + notaExtra + "\n"+
+                "numeroContacto:" + numeroContacto +"\n"+
+                "---------------------------------------------";
     }
 }
