@@ -97,16 +97,27 @@ public class Departamento {
 
     @Override
     public String toString() {
-        return "Departamentos{" +
-                "dimensiones=" + dimensiones +
-                ", baños='" + baños + '\'' +
-                ", internet='" + internet + '\'' +
-                ", semiamublado='" + semiamublado + '\'' +
-                ", limiteDePersonas=" + limiteDePersonas +
-                ", clima='" + clima + '\'' +
-                ", ubicacion='" + ubicacion + '\'' +
-                ", notaExtra='" + notaExtra + '\'' +
-                ", numeroCotacto='" + numeroCotacto + '\'' +
-                '}';
+        return
+                        "|///////////////////////////////////////////////////////////////////////\n" +
+                        "|                                            Departamento                              " +"\n\n"+
+                        "| Dimensiones =-:-:-= " + dimensiones + "\n"+
+                        "|\n" +
+                        "| Baños =-:-:-= " + baños +"\n"+
+                        "|\n" +
+                        "| Internet =-:-:-= " + internet +"\n"+
+                        "|\n" +
+                        "| Semi-amueblabo =-:-:-= " + semiamublado +"\n"+
+                        "|\n" +
+                        "| Limite de personas =-:-:-= " + limiteDePersonas + "\n"+
+                        "|\n" +
+                        "| Clima =-:-:-= " + clima + "\n"+
+                        "|\n" +
+                        "| Úbicacion =-:-:-=" + ubicacion + "\n"+
+                        "|\n" +
+                        "| Nota extra =-:-:-= " + notaExtra + "\n"+
+                        "|\n" +
+                        "| Número de contacto =-:-:-= " + numeroCotacto +"\n"+
+                        "|///////////////////////////////////////////////////////////////////////";
+
     }
 }

@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -46,17 +45,12 @@
             <Font name="PT Mono Bold" size="28.0" />
          </font>
       </Label>
-      <PasswordField fx:id="idBañosDepartamento" alignment="CENTER" layoutX="18.0" layoutY="191.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </PasswordField>
       <Label layoutX="18.0" layoutY="226.0" prefHeight="27.0" prefWidth="335.0" text="¿Cuentas con internet? " textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idInternetDepartamento" alignment="CENTER" layoutX="22.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idInternetDepartamento" alignment="CENTER" layoutX="19.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -66,17 +60,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="idSemiAmuebladoDepartamento" alignment="CENTER" layoutX="18.0" layoutY="318.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </PasswordField>
       <Label layoutX="18.0" layoutY="352.0" prefHeight="27.0" prefWidth="335.0" text="¿Capacidad máxima de personas?" textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idCapacidadMaximaDepartamento" alignment="CENTER" layoutX="20.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de personas" style="-fx-background-radius: 40;">
+      <TextField fx:id="idCapacidadMaximaDepartamento" alignment="CENTER" layoutX="18.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de personas" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -86,11 +75,6 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="idClimaDepartamento" alignment="CENTER" layoutX="18.0" layoutY="450.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese sí o no" style="-fx-background-radius: 40;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </PasswordField>
       <Label layoutX="18.0" layoutY="485.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa la ubicación del departamento" textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
@@ -106,20 +90,35 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="idNotaExtraDepartamento" alignment="CENTER" layoutX="17.0" layoutY="580.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese alguna nota extra" style="-fx-background-radius: 40;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </PasswordField>
       <Label layoutX="22.0" layoutY="616.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa el número de contacto " textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="idNumeroDeContactoDepartamento" alignment="CENTER" layoutX="19.0" layoutY="647.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número " style="-fx-background-radius: 40;">
+      <TextField fx:id="idBañosDepartamento" alignment="CENTER" layoutX="15.0" layoutY="189.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
-      </PasswordField>
+      </TextField>
+      <TextField fx:id="idSemiAmuebladoDepartamento" alignment="CENTER" layoutX="15.0" layoutY="315.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idClimaDepartamento" alignment="CENTER" layoutX="15.0" layoutY="447.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idNotaExtraDepartamento" alignment="CENTER" layoutX="15.0" layoutY="577.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese una nota extra" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idNumeroDeContactoDepartamento" alignment="CENTER" layoutX="19.0" layoutY="643.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa número " style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

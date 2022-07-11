@@ -41,6 +41,7 @@ public class RegistroDepartamentoController {
     @FXML
     private TextField idUbicacionDepartamento;
 
+
     @FXML
     void btnRegistroDepartamentoOnMouseClicked(MouseEvent event) {
         double dimensiones = Double.valueOf(idDimencionesDepartamento.getText());
