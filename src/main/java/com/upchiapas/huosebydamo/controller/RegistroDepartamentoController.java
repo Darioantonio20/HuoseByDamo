@@ -1,5 +1,6 @@
 package com.upchiapas.huosebydamo.controller;
 
+import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
 import com.upchiapas.huosebydamo.models.Departamento;
 import javafx.event.ActionEvent;
@@ -54,6 +55,7 @@ public class RegistroDepartamentoController {
         String numeroCotacto = idNumeroDeContactoDepartamento.getText();
         Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto);
         Almacenamiento.departamentos.add(departamento);
+        main.setFXML("home-page-view","homeByDamo - menu principal");
     }
 
     @FXML
