@@ -1,6 +1,7 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.controller.models.ValidateUser;
+import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.ValidateUser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -27,13 +28,14 @@ public class InicioSesionController {
 
     @FXML
     void btnEntradaOnMouseClicked(MouseEvent event) {
-        /*ValidateUser user = new ValidateUser();
+        ValidateUser user = new ValidateUser();
         if (user.autenticarUser(userName.getText(), pass.getText())){
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText("Inicio sesión - CORRECTO ");
             alert.setContentText("Bienvenido a House By DAMO");
             alert.showAndWait();
+            main.setFXML("home-page-view","homeByDamo - menu principal");
 
         }else{
 
@@ -42,18 +44,11 @@ public class InicioSesionController {
             alert.setContentText("Él usuario no está registrado ó no existe");
             alert.showAndWait();
 
-        }*/
+        }
     }
 
     @FXML
     void ingresarHome(ActionEvent event) throws IOException {
 
-        Stage primaryStage= new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/home-page-view.fxml"));
-
-        primaryStage.setTitle("Inmoviliaria DAMO");
-
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
     }
 }

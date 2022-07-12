@@ -1,7 +1,7 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
-import com.upchiapas.huosebydamo.controller.models.Casa;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
+import com.upchiapas.huosebydamo.models.Casa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

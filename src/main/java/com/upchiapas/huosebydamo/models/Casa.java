@@ -1,4 +1,4 @@
-package com.upchiapas.huosebydamo.controller.models;
+package com.upchiapas.huosebydamo.models;
 
 public class Casa {
     private double dimensiones ;
@@ -100,15 +100,15 @@ public class Casa {
 
         return  "///////////////////////////////////////////////////////////////////////////////////////////\n" +
                 "                                                Casa                                     " + "\n" + "\n" +
-                " Dimensiones  =-:-:-=  " + dimensiones + "\n"+
-                " Número de pisos =-:-:-=  " + pisos +"\n"+
-                " Número de cuartos  =-:-:-=  " + cuartos +"\n"+
-                " Número de baños  =-:-:-=  " + baños +"\n"+
-                " Tiene área de lavado  =-:-:-=  " + arealavado + "\n"+
-                " Tiene cochera  =-:-:-= " + cochera + "\n"+
-                " Ubicacion  =-:-:-=  " + ubicacion + "\n"+
-                " Nota extra  =-:-:-=  " + notaExtra + "\n"+
-                " Número de contacto del arrendador  =-:-:-=  " + numeroContacto + "\n" + "\n" +
+                " Dimensiones: " + dimensiones + "\n"+
+                " Número de pisos: " + pisos +"\n"+
+                " Número de cuartos: " + cuartos +"\n"+
+                " Número de baños: " + baños +"\n"+
+                " Tiene área de lavado:" + arealavado + "\n"+
+                " Tiene cochera: " + cochera + "\n"+
+                " Ubicacion: " + ubicacion + "\n"+
+                " Nota extra: " + notaExtra + "\n"+
+                " Número de contacto del arrendador:" + numeroContacto + "\n" + "\n" +
                 "//////////////////////////////////////////////////////////////////////////////////////////";
     }
 }

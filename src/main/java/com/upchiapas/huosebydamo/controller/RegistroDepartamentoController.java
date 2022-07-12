@@ -1,11 +1,10 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
-import com.upchiapas.huosebydamo.controller.models.Departamento;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
+import com.upchiapas.huosebydamo.models.Departamento;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 

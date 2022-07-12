@@ -1,7 +1,8 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
-import com.upchiapas.huosebydamo.controller.models.Usuario;
+import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
+import com.upchiapas.huosebydamo.models.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,6 +50,7 @@ public class RegistroController {
         String contraseña = idContraseña.getText();
         Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
         Almacenamiento.datausers.add(user);
+        main.setFXML("home-page-view","homeByDamo - menu principal");
         /*for (int i=0; i<Almacenamiento.datausers.size();i++){
             System.out.println(Almacenamiento.datausers.get(i).getNombre());
         }*/
@@ -58,12 +60,6 @@ public class RegistroController {
 
     @FXML
     void guardarDatos(ActionEvent event) throws IOException {
-        Stage primaryStage= new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/com/upchiapas/huosebydamo/home-page-view.fxml"));
 
-        primaryStage.setTitle("Inmoviliaria DAMO");
-
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
     }
 }

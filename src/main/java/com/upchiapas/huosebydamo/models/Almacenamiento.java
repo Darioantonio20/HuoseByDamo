@@ -1,4 +1,4 @@
-package com.upchiapas.huosebydamo.controller.models;
+package com.upchiapas.huosebydamo.models;
 
 import java.util.ArrayList;
 

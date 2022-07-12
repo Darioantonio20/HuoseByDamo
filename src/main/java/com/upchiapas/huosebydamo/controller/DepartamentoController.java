@@ -1,6 +1,6 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.controller.models.Almacenamiento;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -29,11 +29,13 @@ public class DepartamentoController {
         for (int i = 0; i< Almacenamiento.departamentos.size(); i++){
             //txtAreaDepartamentos.setText(Almacenamiento.departamentos.get(i).toString());
             fulltext += Almacenamiento.departamentos.get(i).toString();
-            System.out.println(Almacenamiento.departamentos.get(i).toString());
+           // System.out.println(Almacenamiento.departamentos.get(i).toString());
         }
         txtAreaDepartamentos.setText(fulltext);
 
     }
+
+
     @FXML
     void closePage(ActionEvent event) {
         Stage stage = (Stage) this.btnsalida.getScene().getWindow();
