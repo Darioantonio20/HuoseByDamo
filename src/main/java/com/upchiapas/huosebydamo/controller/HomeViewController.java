@@ -1,12 +1,15 @@
 package com.upchiapas.huosebydamo.controller;
 
 import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
+import com.upchiapas.huosebydamo.models.Usuario;
 import com.upchiapas.huosebydamo.models.ValidateUser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
@@ -25,6 +28,7 @@ public class HomeViewController {
 
 
        main.setFXML("sesion-view","homeByDamo -iniciar sesion");
+        Almacenamiento.datausers.add(new Usuario("jose","merlin","gege@gmail.com","9515271070","angelxmxx","1234"));
 
     }
 

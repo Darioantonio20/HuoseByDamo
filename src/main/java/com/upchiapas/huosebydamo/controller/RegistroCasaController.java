@@ -1,5 +1,6 @@
 package com.upchiapas.huosebydamo.controller;
 
+import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
 import com.upchiapas.huosebydamo.models.Casa;
 import javafx.event.ActionEvent;
@@ -48,14 +49,15 @@ public class RegistroCasaController {
         byte baños = Byte.valueOf(idCantidadDeBañosCasa.getText());
         String arealavado = idAreaDeLavadoCasa.getText();
         String cochera =idCocheraCasa.getText();
-        String ubicacion = idCocheraCasa.getText();
+        String ubicacion = idUbicacionCasa.getText();
         String notaExtra = idNotaExtraCasa.getText();
         String numeroContacto = idNumeroDeContactoCasa.getText();
         Casa casa = new Casa(dimensiones,pisos,cuartos,baños,arealavado,cochera,ubicacion,notaExtra,numeroContacto);
         Almacenamiento.casas.add(casa);
-        /*for (int i=0; i<Almacenamiento.casas.size();i++){
+        main.setFXML("home-page-view","homeByDamo - menu principal");
+        for (int i=0; i<Almacenamiento.casas.size();i++){
             System.out.println(Almacenamiento.casas.get(i).toString());
-        }*/
+        }
     }
 
     @FXML

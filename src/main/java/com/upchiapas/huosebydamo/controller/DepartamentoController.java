@@ -32,7 +32,6 @@ public class DepartamentoController {
            // System.out.println(Almacenamiento.departamentos.get(i).toString());
         }
         txtAreaDepartamentos.setText(fulltext);
-
     }
 
 
