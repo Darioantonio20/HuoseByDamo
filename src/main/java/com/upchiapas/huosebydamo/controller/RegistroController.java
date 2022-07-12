@@ -17,9 +17,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class RegistroController {
-
     @FXML
     private Button btnAltaUser;
+
+    @FXML
+    private Button btnSalidaRegistro;
 
     @FXML
     private TextField idApellidos;
@@ -39,7 +41,6 @@ public class RegistroController {
     @FXML
     private TextField idNumeroDeContacto;
 
-
     @FXML
     void btnDarDeAltaOnMouseClicked(MouseEvent event) {
         String nombre = idNombres.getText();
@@ -57,9 +58,8 @@ public class RegistroController {
 
     }
 
-
     @FXML
-    void guardarDatos(ActionEvent event) throws IOException {
-
+    void btnSalidaRegistroOnMouseClicked(MouseEvent event) {
+        main.setFXML("home-view","homeByDamo - Home View");
     }
 }

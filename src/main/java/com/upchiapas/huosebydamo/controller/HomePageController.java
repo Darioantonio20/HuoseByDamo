@@ -31,45 +31,35 @@ public class HomePageController {
     private Pane idCasa;
 
     @FXML
+    private Button idCerrarSesion;
+
+    @FXML
     private Pane idDepartamento;
 
     @FXML
-    void registrarCasa(ActionEvent event) throws IOException {
-        main.setFXML("registrar-casa-view","homeByDamo - registro casa");
-
-    }
-
-    @FXML
-    void registrarDepartamento(ActionEvent event) throws IOException {
-        main.setFXML("registrar-departamento-view","homeByDamo - registro departamento");
-
-
-    }
-
-    @FXML
-    void visualizacionCasa(ActionEvent event) throws IOException {
-        main.setFXML("casa-view","homeByDamo - visualización de casas ");
-
-
-    }
-
-    @FXML
-    void visualizacionDepartamentos(ActionEvent event) throws IOException {
-        main.setFXML("departamento-view","homeByDamo - visualización de casas ");
-
-
-    }
-
-    @FXML
     void btnVisualizarCasaOnMouseClicked(MouseEvent event) {
-
+        main.setFXML("casa-view","homeByDamo - Visualización De Casas ");
     }
 
     @FXML
     void btnVisualizarDepartamentoOnMouseClicked(MouseEvent event) {
+        main.setFXML("departamento-view","homeByDamo - Visualización De Departamento ");
+    }
 
+    @FXML
+    void btnRegistrarCasaOnMouseClicked(MouseEvent event) {
+        main.setFXML("registrar-casa-view","homeByDamo - Registro Casa");
+    }
+
+    @FXML
+    void btnRegistrarDepartamentoOnMouseClicked(MouseEvent event) {
+        main.setFXML("registrar-departamento-view","homeByDamo - Registro Departamento");
     }
 
 
+    @FXML
+    void idCerrarSesionOnMouseClicked(MouseEvent event) {
+        main.setFXML("home-view","homeByDamo - Home View ");
+    }
 }
 

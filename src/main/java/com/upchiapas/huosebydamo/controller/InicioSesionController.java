@@ -21,11 +21,13 @@ public class InicioSesionController {
     private Button btnEntrada;
 
     @FXML
+    private Button btnSalidaInicioSesion;
+
+    @FXML
     private PasswordField pass;
 
     @FXML
     private TextField userName;
-
     @FXML
     void btnEntradaOnMouseClicked(MouseEvent event) {
         ValidateUser user = new ValidateUser();
@@ -46,9 +48,8 @@ public class InicioSesionController {
 
         }
     }
-
     @FXML
-    void ingresarHome(ActionEvent event) throws IOException {
-
+    void btnSalidaInicioSesionOnMouseClicked(MouseEvent event) {
+        main.setFXML("home-view","homeByDamo - Home View");
     }
 }

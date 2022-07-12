@@ -10,9 +10,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 public class RegistroCasaController {
-
     @FXML
     private Button btnRegistroDeCasa;
+
+    @FXML
+    private Button btnSalidaRegistroCasa;
 
     @FXML
     private TextField idAreaDeLavadoCasa;
@@ -59,10 +61,9 @@ public class RegistroCasaController {
             System.out.println(Almacenamiento.casas.get(i).toString());
         }
     }
-
     @FXML
-    void ingresarHome(ActionEvent event) {
-
+    void btnSalidaRegistroCasaOnMouseClicked(MouseEvent event) {
+        main.setFXML("home-page-view","homeByDamo - Home Page");
     }
 
 }
