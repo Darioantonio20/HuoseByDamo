@@ -21,7 +21,6 @@ public class DepartamentoController {
 
     @FXML
     private TextArea txtAreaDepartamentos;
-
     @FXML
     void btnMostrarDepartamentoOnClickedMouse(MouseEvent event) {
         String fulltext = "";
@@ -31,6 +30,7 @@ public class DepartamentoController {
             // System.out.println(Almacenamiento.departamentos.get(i).toString());
         }
         txtAreaDepartamentos.setText(fulltext);
+        txtAreaDepartamentos.setEditable(false);// deshabilita la edidicion del texto
     }
 
 

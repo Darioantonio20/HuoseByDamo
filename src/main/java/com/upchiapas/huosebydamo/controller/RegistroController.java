@@ -56,7 +56,6 @@ public class RegistroController {
             Almacenamiento.datausers.add(user);
             main.setFXML("home-page-view","homeByDamo - menu principal");
         }else {
-            System.out.println("ingresa completo tus datos");// chequeo de registros nulos
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText("verifique sus datos");
             alert.showAndWait();
