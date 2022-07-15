@@ -3,11 +3,13 @@ package com.upchiapas.huosebydamo.controller;
 import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
 import com.upchiapas.huosebydamo.models.Usuario;
+import com.upchiapas.huosebydamo.models.ValidateUser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -49,13 +51,16 @@ public class RegistroController {
         String numeroTelefono = idNumeroDeContacto.getText();
         String nombreUsuario = idNombreDeUsuario.getText();
         String contraseña = idContraseña.getText();
-        Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
-        Almacenamiento.datausers.add(user);
-        main.setFXML("home-page-view","homeByDamo - menu principal");
-        /*for (int i=0; i<Almacenamiento.datausers.size();i++){
-            System.out.println(Almacenamiento.datausers.get(i).getNombre());
-        }*/
-
+        if (ValidateUser.ValidacionDatosUser(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña) ==true){
+            Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
+            Almacenamiento.datausers.add(user);
+            main.setFXML("home-page-view","homeByDamo - menu principal");
+        }else {
+            System.out.println("ingresa completo tus datos");// chequeo de registros nulos
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("verifique sus datos");
+            alert.showAndWait();
+        }
     }
 
     @FXML

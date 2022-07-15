@@ -28,4 +28,22 @@ public class ValidateUser {
         }
         return user;
     }
+
+    public static boolean ValidacionDatosUser (String nombre,String apellidos,String correoElectronico, String numeroTelefono,String nombreUsuario,String contraseña){
+       boolean validacion;
+        if(nombre!= ""){
+            if (apellidos!= ""){
+                if (correoElectronico !=""){
+                    if (numeroTelefono!= ""){
+                        if (nombreUsuario!=""){
+                            if (contraseña != null){
+                                validacion= true;
+                            }else {validacion=false;}
+                        }else {validacion=false;}
+                    }else {validacion=false;}
+                }else {validacion=false;}
+            }else {validacion=false;}
+        }else {validacion=false;}
+        return validacion;
+    }
 }
