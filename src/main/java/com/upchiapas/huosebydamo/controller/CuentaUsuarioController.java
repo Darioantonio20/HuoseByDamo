@@ -9,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 public class CuentaUsuarioController {
 
 
+
     @FXML
     private Button btnSalidaMiCuenta;
 
@@ -19,7 +20,7 @@ public class CuentaUsuarioController {
     private TextArea textAreaRegistroInmueble;
 
     @FXML
-    void btnSalidaMiCuentaOnMouseClicked(MouseEvent event) {
+    void btnSalidaMiCuentaOnmouseClicked(MouseEvent event) {
         main.setFXML("home-page-view","House By DAMO - Home Page ");
     }
 }
