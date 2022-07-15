@@ -31,10 +31,19 @@ public class CasaController {
     @FXML
     void btnMostrarCasaOnClickedMouse(MouseEvent event) {
         String fulltext = "";
-        for (int i = 0; i < Almacenamiento.casas.size(); i++) {
+        String valorar = textFieldFiltroUbicacionCasa.getText();
+        if(valorar!= ""){
+            for (int i=0; i<Almacenamiento.casas.size();i++){
+                if (valorar.equals(Almacenamiento.casas.get(i).getUbicacion())){
+                    fulltext += Almacenamiento.casas.get(i).toString();
+                }
+            } textArea.setText(fulltext);
+        }else{
+            for (int i = 0; i < Almacenamiento.casas.size(); i++) {
             fulltext += Almacenamiento.casas.get(i).toString();
         }
-        textArea.setText(fulltext);
+            textArea.setText(fulltext);
+        }
     }
 
     @FXML
