@@ -21,10 +21,11 @@ public class DepartamentoController {
     private Pane pane;
 
     @FXML
-    private TextField textFieldFiltroUbicacionDepartamento;
+    private TextField textfieldFiltroUbicacion;
 
     @FXML
     private TextArea txtAreaDepartamentos;
+
     @FXML
     void btnMostrarDepartamentoOnClickedMouse(MouseEvent event) {
         String fulltext = "";
@@ -41,6 +42,7 @@ public class DepartamentoController {
 
     @FXML
     void btnsalidaOnMouseClicked(MouseEvent event) {
+
         main.setFXML("home-page-view","House By DAMO - Home Page ");
     }
 

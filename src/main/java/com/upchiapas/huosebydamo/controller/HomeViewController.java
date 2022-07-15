@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class HomeViewController {
 
        main.setFXML("sesion-view","homeByDamo -iniciar sesion");
         Almacenamiento.datausers.add(new Usuario("jose","merlin","gege@gmail.com","9515271070","angelxmxx","1234"));
-
+        Almacenamiento.datausers.add(new Usuario("dario","gutierrez","antoniodario10@hotmail.com","9514795475","gtzdario","4321"));
     }
 
     @FXML
