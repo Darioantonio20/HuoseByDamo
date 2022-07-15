@@ -9,6 +9,9 @@ import javafx.scene.input.MouseEvent;
 public class CuentaUsuarioController {
 
     @FXML
+    private Button btnMostrar;
+
+    @FXML
     private Button btnReturnHome;
 
     @FXML
@@ -16,6 +19,11 @@ public class CuentaUsuarioController {
 
     @FXML
     private TextArea textAreaRegistroInmueble;
+
+    @FXML
+    void btnMostrarOnMouseClicked(MouseEvent event) {
+
+    }
 
     @FXML
     void returnHome(MouseEvent event) {

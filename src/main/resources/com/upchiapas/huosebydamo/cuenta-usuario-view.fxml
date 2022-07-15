@@ -15,18 +15,19 @@
             <Image url="@image/Rectangle_121.png" />
          </image>
       </ImageView>
-      <Text fill="#673bb7" layoutX="109.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mi cuenta" textAlignment="CENTER">
+      <Text fill="#673bb7" layoutX="133.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mi cuenta" textAlignment="CENTER">
          <font>
-            <Font name="Microsoft Sans Serif" size="38.0" />
+            <Font name="Microsoft Sans Serif" size="25.0" />
          </font>
       </Text>
       <TextArea fx:id="textAreaMiCuenta" editable="false" layoutX="12.0" layoutY="85.0" prefHeight="150.0" prefWidth="355.0" />
       <TextArea fx:id="textAreaRegistroInmueble" editable="false" layoutX="12.0" layoutY="270.0" prefHeight="516.0" prefWidth="353.0" />
-      <Text fill="#673bb7" layoutX="92.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inmuebles registrados">
+      <Text fill="#673bb7" layoutX="111.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inmuebles registrados">
          <font>
-            <Font size="22.0" />
+            <Font size="17.0" />
          </font>
       </Text>
       <Button fx:id="btnReturnHome" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#returnHome" style="-fx-background-color: #F07373; -fx-background-radius: 20;" text="X" textFill="WHITE" />
+      <Button fx:id="btnMostrar" layoutX="296.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#btnMostrarOnMouseClicked" prefHeight="26.0" prefWidth="62.0" style="-fx-background-radius: 50; -fx-background-color: #99FFCC;" text="Mostrar" />
    </children>
 </AnchorPane>
