@@ -26,7 +26,7 @@
                 <Font name="Microsoft Sans Serif" size="24.0" />
             </font>
         </Label>
-        <Button fx:id="btnEntrada" layoutX="90.0" layoutY="481.0" mnemonicParsing="false" onAction="#ingresarHome" onMouseClicked="#btnEntradaOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
+        <Button fx:id="btnEntrada" layoutX="90.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#btnEntradaOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="20.0" />
             </font>
@@ -51,5 +51,11 @@
             <Font size="16.0" />
          </font>
       </PasswordField>
+      <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSalidaInicioSesion" layoutX="13.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#btnSalidaInicioSesionOnMouseClicked" prefHeight="46.0" prefWidth="40.0" style="-fx-background-color: 000000;" />
     </children>
 </AnchorPane>
