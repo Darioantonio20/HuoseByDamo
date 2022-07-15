@@ -5,6 +5,7 @@ import com.upchiapas.huosebydamo.models.Almacenamiento;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
@@ -21,6 +22,10 @@ public class CasaController {
 
     @FXML
     private TextArea textArea;
+
+    @FXML
+    private TextField textFieldFiltroUbicacionCasa;
+
 
 
     @FXML
