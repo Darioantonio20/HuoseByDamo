@@ -58,6 +58,9 @@ public class RegistroDepartamentoController {
         Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto);
         Almacenamiento.departamentos.add(departamento);
         main.setFXML("home-page-view","homeByDamo - menu principal");
+        for (int i=0; i<Almacenamiento.departamentos.size();i++){
+            System.out.println(Almacenamiento.departamentos.get(i).toString());
+        }
 
     }
 

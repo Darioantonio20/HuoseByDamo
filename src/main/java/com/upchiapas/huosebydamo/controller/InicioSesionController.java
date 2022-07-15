@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class InicioSesionController {
+   public static String useringresado;
     @FXML
     private Button btnEntrada;
 
@@ -37,13 +38,14 @@ public class InicioSesionController {
             alert.setHeaderText("Inicio sesión - CORRECTO ");
             alert.setContentText("Bienvenido a House By DAMO");
             alert.showAndWait();
+            useringresado = userName.getText();
             main.setFXML("home-page-view","homeByDamo - menu principal");
 
         }else{
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText("Inicio sesión - ERROR");
-            alert.setContentText("Él usuario no está registrado ó no existe");
+            alert.setContentText("revise su usuario y contraseña");
             alert.showAndWait();
 
         }

@@ -29,13 +29,19 @@ public class DepartamentoController {
     @FXML
     void btnMostrarDepartamentoOnClickedMouse(MouseEvent event) {
         String fulltext = "";
-        for (int i = 0; i< Almacenamiento.departamentos.size(); i++){
-            //txtAreaDepartamentos.setText(Almacenamiento.departamentos.get(i).toString());
-            fulltext += Almacenamiento.departamentos.get(i).toString();
-            // System.out.println(Almacenamiento.departamentos.get(i).toString());
+        String valorar = textfieldFiltroUbicacion.getText();
+        if(valorar!= ""){
+            for (int i=0; i<Almacenamiento.departamentos.size();i++){
+                if (valorar.equals(Almacenamiento.departamentos.get(i).getUbicacion())){
+                    fulltext += Almacenamiento.departamentos.get(i).toString();
+                }
+            } txtAreaDepartamentos.setText(fulltext);
+        }else{
+            for (int i = 0; i < Almacenamiento.departamentos.size(); i++) {
+                fulltext += Almacenamiento.departamentos.get(i).toString();
+            }
+            txtAreaDepartamentos.setText(fulltext);
         }
-        txtAreaDepartamentos.setText(fulltext);
-        txtAreaDepartamentos.setEditable(false);// deshabilita la edidicion del texto
     }
 
 
