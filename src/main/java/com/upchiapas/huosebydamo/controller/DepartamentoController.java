@@ -2,12 +2,12 @@ package com.upchiapas.huosebydamo.controller;
 
 import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
-import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.fxml.FXML;
 
 public class DepartamentoController {
 
@@ -28,8 +28,10 @@ public class DepartamentoController {
 
     @FXML
     void btnMostrarDepartamentoOnClickedMouse(MouseEvent event) {
+
         String fulltext = "";
         String valorar = textfieldFiltroUbicacion.getText();
+
         if(valorar!= ""){
             for (int i=0; i<Almacenamiento.departamentos.size();i++){
                 if (valorar.equals(Almacenamiento.departamentos.get(i).getUbicacion())){
@@ -43,13 +45,10 @@ public class DepartamentoController {
             txtAreaDepartamentos.setText(fulltext);
         }
     }
-
-
-
     @FXML
     void btnsalidaOnMouseClicked(MouseEvent event) {
 
         main.setFXML("home-page-view","House By DAMO - Home Page ");
-    }
 
+    }
 }

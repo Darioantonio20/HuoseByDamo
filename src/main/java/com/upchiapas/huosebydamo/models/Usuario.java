@@ -67,13 +67,15 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "---------------------------------------------------- "+
-                "        Usuario                    " + "\n"+
-                "nombre:" + nombre +  "\n"+
-                "apellidos: " + apellidos + "\n"+
-                "correoElectronico: " + correoElectronico + "\n"+
-                "numeroTelefono: " + numeroTelefono + "\n"+
-                "nombreUsuario: " + nombreUsuario +  "\n"+
-                "contraseña: " + contraseña +  "\n";
+
+        return  "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" + "|||" +
+                "\t"+"\t"+"\t"+"                                 |||- Usuario -|||                  " + "\n"+
+                "|||  Nombre :  " + nombre +  "\n"+
+                "|||  Apellidos :  " + apellidos + "\n"+
+                "|||  Correo Eléctronico :  " + correoElectronico + "\n"+
+                "|||  Número De Teléfono :  " + numeroTelefono + "\n"+
+                "|||  Nombre De Usuario :  " + nombreUsuario +  "\n"+
+                "|||  Contraseña :  " + contraseña +  "\n" +
+                "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n";
     }
 }

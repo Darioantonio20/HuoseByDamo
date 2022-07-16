@@ -45,6 +45,7 @@ public class RegistroCasaController {
 
     @FXML
     void btnRegistroCasaOnMouseClicked(MouseEvent event) {
+
         double dimensiones = Double.valueOf(idDimencionesCasa.getText());
         byte pisos = Byte.valueOf(idNumeroDePisosCasa.getText());
         byte cuartos = Byte.valueOf(idNumeroDeCuartosCasa.getText());
