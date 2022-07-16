@@ -55,7 +55,8 @@ public class RegistroDepartamentoController {
         String ubicacion = idUbicacionDepartamento.getText();
         String notaExtra = idNotaExtraDepartamento.getText();
         String numeroCotacto = idNumeroDeContactoDepartamento.getText();
-        Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto);
+        String usuarioPropietario = InicioSesionController.useringresado;
+        Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto,usuarioPropietario);
         Almacenamiento.departamentos.add(departamento);
         main.setFXML("home-page-view","homeByDamo - menu principal");
         for (int i=0; i<Almacenamiento.departamentos.size();i++){

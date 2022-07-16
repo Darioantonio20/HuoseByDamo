@@ -54,7 +54,8 @@ public class RegistroCasaController {
         String ubicacion = idUbicacionCasa.getText();
         String notaExtra = idNotaExtraCasa.getText();
         String numeroContacto = idNumeroDeContactoCasa.getText();
-        Casa casa = new Casa(dimensiones,pisos,cuartos,baños,arealavado,cochera,ubicacion,notaExtra,numeroContacto);
+        String usuarioPropietario = InicioSesionController.useringresado;
+        Casa casa = new Casa(dimensiones,pisos,cuartos,baños,arealavado,cochera,ubicacion,notaExtra,numeroContacto,usuarioPropietario);
         Almacenamiento.casas.add(casa);
         main.setFXML("home-page-view","homeByDamo - menu principal");
         for (int i=0; i<Almacenamiento.casas.size();i++){

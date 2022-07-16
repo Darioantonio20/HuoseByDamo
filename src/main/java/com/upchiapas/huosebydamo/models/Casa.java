@@ -10,8 +10,9 @@ public class Casa {
     private String ubicacion ;
     private String notaExtra ;
     private String numeroContacto;
+    private  String usuarioPropietario;
 
-    public Casa(double dimensiones, byte pisos, byte cuartos, byte baños, String arealavado, String cochera, String ubicacion, String notaExtra, String numeroContacto) {
+    public Casa(double dimensiones, byte pisos, byte cuartos, byte baños, String arealavado, String cochera, String ubicacion, String notaExtra, String numeroContacto, String usuarioPropietario) {
         this.dimensiones = dimensiones;
         this.pisos = pisos;
         this.cuartos = cuartos;
@@ -21,6 +22,7 @@ public class Casa {
         this.ubicacion = ubicacion;
         this.notaExtra = notaExtra;
         this.numeroContacto = numeroContacto;
+        this.usuarioPropietario = usuarioPropietario;
     }
 
     public double getDimensiones() {
@@ -95,10 +97,17 @@ public class Casa {
         this.numeroContacto = numeroContacto;
     }
 
+    public String getUsuarioPropietario() {
+        return usuarioPropietario;
+    }
+
+    public void setUsuarioPropietario(String usuarioPropietario) {
+        this.usuarioPropietario = usuarioPropietario;
+    }
+
     @Override
     public String toString() {
-
-        return  "///////////////////////////////////////////////////////////////////////////////////////////\n" +
+         return  "///////////////////////////////////////////////////////////////////////////////////////////\n" +
                 "                                                Casa                                     " + "\n" + "\n" +
                 " Dimensiones: " + dimensiones + "\n"+
                 " Número de pisos: " + pisos +"\n"+
@@ -108,7 +117,8 @@ public class Casa {
                 " Tiene cochera: " + cochera + "\n"+
                 " Ubicacion: " + ubicacion + "\n"+
                 " Nota extra: " + notaExtra + "\n"+
-                " Número de contacto del arrendador:" + numeroContacto + "\n" + "\n" +
-                "//////////////////////////////////////////////////////////////////////////////////////////";
+                " Número de contacto del arrendador:" + numeroContacto + "\n"+
+                "Usuario propietario: "+ usuarioPropietario + "\n" +
+                "///////////////////////////////////////////////////////////////////////////////////////////";
     }
 }

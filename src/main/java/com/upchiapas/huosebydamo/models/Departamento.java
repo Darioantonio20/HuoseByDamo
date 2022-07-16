@@ -10,8 +10,9 @@ public class Departamento {
     String ubicacion;
     String notaExtra;
     String numeroCotacto;
+    String usuarioPropietario;
 
-    public Departamento(double dimensiones, String baños, String internet, String semiamublado, byte limiteDePersonas, String clima, String ubicacion, String notaExtra, String numeroCotacto) {
+    public Departamento(double dimensiones, String baños, String internet, String semiamublado, byte limiteDePersonas, String clima, String ubicacion, String notaExtra, String numeroCotacto, String usuarioPropietario) {
         this.dimensiones = dimensiones;
         this.baños = baños;
         this.internet = internet;
@@ -21,6 +22,7 @@ public class Departamento {
         this.ubicacion = ubicacion;
         this.notaExtra = notaExtra;
         this.numeroCotacto = numeroCotacto;
+        this.usuarioPropietario = usuarioPropietario;
     }
 
     public double getDimensiones() {
@@ -95,10 +97,18 @@ public class Departamento {
         this.numeroCotacto = numeroCotacto;
     }
 
+    public String getUsuarioPropietario() {
+        return usuarioPropietario;
+    }
+
+    public void setUsuarioPropietario(String usuarioPropietario) {
+        this.usuarioPropietario = usuarioPropietario;
+    }
+
     @Override
     public String toString() {
         return
-                        "///////////////////////////////////////////////////////////////////////////////////////////\n" +
+                "///////////////////////////////////////////////////////////////////////////////////////////\n" +
                         "                                            Departamento                              " +"\n\n"+
                         " Dimensiones del departamento  =-:-:-=  " + dimensiones + "\n"+
                         " Tiene baños  =-:-:-=  " + baños +"\n"+
@@ -108,7 +118,8 @@ public class Departamento {
                         " Tiene clima  =-:-:-=  " + clima + "\n"+
                         " Úbicacion  =-:-:-=  " + ubicacion + "\n"+
                         " Nota extra  =-:-:-=  " + notaExtra + "\n"+
-                        " Número de contacto del arrendador  =-:-:-=  " + numeroCotacto + "\n" + "\n" +
+                        " Número de contacto del arrendador  =-:-:-=  " + numeroCotacto + "\n"+
+                        "Usuario propietario: "+ usuarioPropietario + "\n" +
                         "///////////////////////////////////////////////////////////////////////////////////////////";
 
     }

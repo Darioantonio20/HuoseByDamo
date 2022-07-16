@@ -1,6 +1,7 @@
 package com.upchiapas.huosebydamo.controller;
 
 import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.Almacenamiento;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -71,7 +72,6 @@ public class HomePageController {
 
     @FXML
     void btnRegistroVisualizacionUsuarioOnMouseClicked(MouseEvent event) {
-
         main.setFXML("cuenta-usuario-view","homeByDamo - Cuenta De Usuario ");
     }
 }
