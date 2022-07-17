@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="812.0" prefWidth="372.0" style="-fx-background-color: A9EBE8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.HomePageController">
+<AnchorPane prefHeight="812.0" prefWidth="372.0" style="-fx-background-color: A9EBE8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.HomePageController">
     <children>
         <ImageView fitHeight="87.0" fitWidth="375.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -33,7 +30,7 @@
         <Text fill="#551ac9" layoutX="5.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En Huose by Damo tenemos la mejor selección de" />
         <Text fill="#551ac9" layoutX="22.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="inmuebles para usted, ajustando nuestros precios" />
         <Text fill="#551ac9" layoutX="49.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a su presupuesto, buscando darle un hogar de" />
-        <Text fill="#551ac9" layoutX="70.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de calidad para que usted se sienta en casa." />
+        <Text fill="#551ac9" layoutX="74.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de calidad para que usted se sienta en casa." />
         <ImageView fitHeight="71.0" fitWidth="51.0" layoutX="283.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@image/Palz_Sitting_Chair.png" />
