@@ -54,6 +54,7 @@ public class RegistroController {
         if (ValidateUser.ValidacionDatosUser(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña) ==true){
             Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
             Almacenamiento.datausers.add(user);
+            InicioSesionController.useringresado =nombreUsuario;
             main.setFXML("home-page-view","homeByDamo - menu principal");
         }else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
