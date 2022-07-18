@@ -42,7 +42,6 @@
                 <Image url="@image/Palz_Sitting_Chair.png" />
             </image>
         </ImageView>
-      <Button fx:id="btnsalida" layoutX="31.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#btnsalidaOnMouseClicked" prefHeight="26.0" prefWidth="24.0" style="-fx-background-color: 000000;" />
       <Button fx:id="btnMostrarCasa" layoutX="155.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#btnMostrarDepartamentoOnClickedMouse" style="-fx-background-radius: 40; -fx-background-color: ee4e5c;" text="Mostrar" textFill="WHITE">
          <font>
             <Font size="16.0" />
@@ -69,5 +68,6 @@
             <Image url="@image/Ubicacion.png" />
          </image>
       </ImageView>
+      <Button fx:id="btnsalida" layoutX="30.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#btnsalidaOnMouseClicked" prefHeight="26.0" prefWidth="24.0" style="-fx-background-color: 000000;" />
     </children>
 </AnchorPane>
