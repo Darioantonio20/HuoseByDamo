@@ -29,8 +29,8 @@ public class HomeViewController {
 
        main.setFXML("sesion-view","homeByDamo -iniciar sesion");
 
-        //Almacenamiento.datausers.add(new Usuario("José Ángel","Merlin Ortega","gege@gmail.com","9515271070","angelxmxx","1234"));
-        //Almacenamiento.datausers.add(new Usuario("Darío Antonio","Gutiérrez Álvarez","antoniodario10@hotmail.com","9514795475","gtzdario","4321"));
+        Almacenamiento.datausers.add(new Usuario("José Ángel","Merlin Ortega","gege@gmail.com","9515271070","angelxmxx","1234"));
+        Almacenamiento.datausers.add(new Usuario("Darío Antonio","Gutiérrez Álvarez","antoniodario10@hotmail.com","9514795475","gtzdario","4321"));
 
     }
 
