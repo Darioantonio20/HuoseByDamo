@@ -23,7 +23,6 @@ public class CuentaUsuarioController {
 
     @FXML
     void btnMostrarOnMouseClicked(MouseEvent event) {
-
         String fulltext ="";
         String fulltext2= "";
         for (int i = 0; i< Almacenamiento.datausers.size(); i++){
@@ -44,4 +43,5 @@ public class CuentaUsuarioController {
     void returnHome(MouseEvent event) {
         main.setFXML("home-page-view","House By DAMO - Home Page ");
     }
+
 }
