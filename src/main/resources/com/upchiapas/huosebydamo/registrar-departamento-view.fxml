@@ -40,9 +40,9 @@
             <Image url="@image/Rectangle.png" />
          </image>
       </ImageView>
-      <Label layoutY="1.0" prefHeight="60.0" prefWidth="375.0" text="Registrar departamento" textAlignment="CENTER" textFill="#768c60">
+      <Label layoutX="57.0" layoutY="1.0" prefHeight="60.0" prefWidth="313.0" text="Registrar departamento" textAlignment="CENTER" textFill="#a47eeb">
          <font>
-            <Font name="PT Mono Bold" size="28.0" />
+            <Font name="PT Mono Bold" size="23.0" />
          </font>
       </Label>
       <Label layoutX="18.0" layoutY="226.0" prefHeight="27.0" prefWidth="335.0" text="¿Cuentas con internet? " textAlignment="CENTER" textFill="#673bb7">
@@ -70,17 +70,17 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <Label layoutX="24.0" layoutY="420.0" prefHeight="27.0" prefWidth="335.0" text="¿Cuenta con clima el departamento? " textFill="#673bb7">
+      <Label layoutX="17.0" layoutY="423.0" prefHeight="27.0" prefWidth="335.0" text="¿Cuenta con clima el departamento? " textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="18.0" layoutY="485.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa la ubicación del departamento" textAlignment="CENTER" textFill="#673bb7">
+      <Label layoutX="18.0" layoutY="485.0" prefHeight="27.0" prefWidth="335.0" text="Ingrese municipio" textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idUbicacionDepartamento" alignment="CENTER" layoutX="15.0" layoutY="514.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese la ubicación " style="-fx-background-radius: 40;">
+      <TextField fx:id="idUbicacionDepartamento" alignment="CENTER" layoutX="15.0" layoutY="514.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -120,11 +120,17 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="171.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/Home.png" />
+            <Image url="@image/Flecha_atras.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSalidaRegistroDepartamento" layoutX="170.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroDepartamentoOnMouseClicked" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: 000000;" />
+      <Button fx:id="btnSalidaRegistroDepartamento" layoutX="18.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroDepartamentoOnMouseClicked" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: 000000;" />
+      <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="248.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Bike.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
