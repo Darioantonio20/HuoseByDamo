@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroCasaController">
@@ -30,7 +31,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <ImageView fitHeight="49.0" fitWidth="334.0" layoutX="1.0" layoutY="763.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="71.0" fitWidth="84.0" layoutX="2.0" layoutY="738.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/The_Little_Thing_UI_Design.png" />
          </image>
@@ -40,7 +41,7 @@
             <Image url="@image/Rectangle.png" />
          </image>
       </ImageView>
-      <Label layoutX="71.0" layoutY="1.0" prefHeight="60.0" prefWidth="246.0" text="Registrar casa" textAlignment="CENTER" textFill="#768c60">
+      <Label layoutX="71.0" layoutY="1.0" prefHeight="60.0" prefWidth="246.0" text="Registrar casa" textAlignment="CENTER" textFill="#a47eeb">
          <font>
             <Font name="PT Mono Bold" size="28.0" />
          </font>
@@ -75,12 +76,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="18.0" layoutY="485.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa la ubicación de la casa" textAlignment="CENTER" textFill="#673bb7">
+      <Label layoutX="18.0" layoutY="485.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa el municipio" textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idUbicacionCasa" alignment="CENTER" layoutX="26.0" layoutY="513.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese la ubicación " style="-fx-background-radius: 40;">
+      <TextField fx:id="idUbicacionCasa" alignment="CENTER" layoutX="26.0" layoutY="513.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -122,9 +123,15 @@
       </TextField>
       <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="23.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/Home.png" />
+            <Image url="@image/Flecha_atras.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSalidaRegistroCasa" layoutX="20.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroCasaOnMouseClicked" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: 000000;" />
+      <Button fx:id="btnSalidaRegistroCasa" layoutX="21.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroCasaOnMouseClicked" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: 000000;" />
+      <Pane layoutX="115.0" layoutY="793.0" prefHeight="10.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-background-radius: 5;" />
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="319.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Casita1.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
