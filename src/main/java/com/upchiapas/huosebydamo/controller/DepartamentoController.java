@@ -15,6 +15,9 @@ public class DepartamentoController {
     private Button btnMostrarCasa;
 
     @FXML
+    private Button btnOfertarDepartamento;
+
+    @FXML
     private Button btnsalida;
 
     @FXML
@@ -22,6 +25,9 @@ public class DepartamentoController {
 
     @FXML
     private TextField textfieldFiltroUbicacion;
+
+    @FXML
+    private TextField textfieldRegistroIdDepartamento;
 
     @FXML
     private TextArea txtAreaDepartamentos;
@@ -44,6 +50,12 @@ public class DepartamentoController {
             }
             txtAreaDepartamentos.setText(fulltext);
         }
+    }
+
+
+    @FXML
+    void btnOfertarDepartamentoOnMouseClicked(MouseEvent event) {
+
     }
     @FXML
     void btnsalidaOnMouseClicked(MouseEvent event) {

@@ -16,6 +16,9 @@ public class CasaController {
     private Button btnMostrarCasa;
 
     @FXML
+    private Button btnOfertarCasa;
+
+    @FXML
     private Button btnSalida;
 
     @FXML
@@ -27,6 +30,8 @@ public class CasaController {
     @FXML
     private TextField textFieldFiltroUbicacionCasa;
 
+    @FXML
+    private TextField textfieldRegistroIdCasa;
     @FXML
     void btnMostrarCasaOnClickedMouse(MouseEvent event) {
         String fulltext = "";
@@ -45,6 +50,12 @@ public class CasaController {
             textArea.setText(fulltext);
         }
     }
+
+    @FXML
+    void btnOfertarCasaOnMouseClicked(MouseEvent event) {
+
+    }
+
     @FXML
     void btnSalidaOnMouseClicked(MouseEvent event) {
 
