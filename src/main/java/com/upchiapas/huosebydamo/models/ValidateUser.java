@@ -1,8 +1,6 @@
 package com.upchiapas.huosebydamo.models;
 
-import java.util.ArrayList;
-
-public class ValidateUser {
+public class ValidateUser implements ValidacionDatos{
 
     public boolean autenticarUser(String username,String password){
         boolean estatuto = false;
@@ -45,5 +43,57 @@ public class ValidateUser {
             }else {validacion=false;}
         }else {validacion=false;}
         return validacion;
+    }
+
+    @Override
+    public boolean datosVacios() {
+        return false;
+    }
+
+    @Override
+    public boolean datosVacios(String baños, String internet, String semiamublado, String clima, String ubicacion, String notaExtra, String numeroCotacto) {
+        boolean status;
+        if (baños!=""){
+            if (internet!=""){
+                if (semiamublado!=""){
+                    if (clima!=""){
+                        if (ubicacion!=""){
+                            if (notaExtra!=""){
+                                if (numeroCotacto!=""){
+                                    status=true;
+                                }else {status=false;}
+                            }else {status=false;}
+                        }else {status=false;}
+                    }else {status=false;}
+                }else {status=false;}
+            }else {status=false;}
+        }else {status=false;}
+       return status;
+    }
+    @Override
+    public boolean datosVacios(String arealavado, String cochera, String ubicacion, String notaExtra, String numeroContacto){
+        boolean status;
+        if (arealavado!=""){
+            if (cochera!=""){
+                if (ubicacion!=""){
+                    if (notaExtra!=""){
+                        if (numeroContacto!=""){
+                            status=true;
+                        }else {status=false;}
+                    }else {status=false;}
+                }else {status=false;}
+            }else {status=false;}
+        }else {status=false;}
+        return status;
+    }
+
+    public static boolean usuarioRep (String nombreUsuario){
+        boolean status =false;
+        for (int i=0; i<Almacenamiento.datausers.size(); i++){
+            if (nombreUsuario.equals(Almacenamiento.datausers.get(i).getNombreUsuario())){
+                status =true;
+            }
+        }
+        return status;
     }
 }

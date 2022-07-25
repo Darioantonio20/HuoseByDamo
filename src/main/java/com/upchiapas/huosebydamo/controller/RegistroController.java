@@ -52,13 +52,19 @@ public class RegistroController {
         String nombreUsuario = idNombreDeUsuario.getText();
         String contraseña = idContraseña.getText();
         if (ValidateUser.ValidacionDatosUser(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña) ==true){
-            Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
-            Almacenamiento.datausers.add(user);
-            InicioSesionController.useringresado =nombreUsuario;
-            main.setFXML("home-view","homeByDamo - menu principal");
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeaderText("Registro exitoso    ¡¡¡Inicia sesión ahora!!!");
-            alert.showAndWait();
+            if (ValidateUser.usuarioRep(nombreUsuario)==false){
+                Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
+                Almacenamiento.datausers.add(user);
+                InicioSesionController.useringresado =nombreUsuario;
+                main.setFXML("home-view","homeByDamo - menu principal");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Registro exitoso    ¡¡¡Inicia sesión ahora!!!");
+                alert.showAndWait();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("nombre de usuario no disponible ");
+                alert.showAndWait();
+            }
         }else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText("verifique sus datos");

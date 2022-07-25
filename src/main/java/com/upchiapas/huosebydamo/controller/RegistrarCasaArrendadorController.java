@@ -3,12 +3,16 @@ package com.upchiapas.huosebydamo.controller;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
 import com.upchiapas.huosebydamo.models.Casa;
 import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.ValidateUser;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Button;
 import javafx.fxml.FXML;
 
 public class RegistrarCasaArrendadorController {
+
+    ValidateUser val = new ValidateUser();
 
     @FXML
     private Button btnRegistroDeCasaArrendador;
@@ -55,12 +59,16 @@ public class RegistrarCasaArrendadorController {
         String ubicacion = idUbicacionCasaArrendador.getText();
         String notaExtra = idNotaExtraCasaArrendador.getText();
         String numeroContacto = idNumeroDeContactoCasaArrendador.getText();
-        String usuarioPropietario = InicioSesionController.useringresado;
-        Casa casa = new Casa(dimensiones,pisos,cuartos,baños,arealavado,cochera,ubicacion,notaExtra,numeroContacto,usuarioPropietario);
-        Almacenamiento.casas.add(casa);
-        main.setFXML("arrendador-view","homeByDamo - menu principal");
-        for (int i=0; i<Almacenamiento.casas.size();i++){
-            System.out.println(Almacenamiento.casas.get(i).toString());
+        String usuarioPropietario = InicioSesionArrendadorController.useringresado;
+        if (val.datosVacios(arealavado,cochera,ubicacion,notaExtra,numeroContacto)==true){
+            Casa casa = new Casa(dimensiones,pisos,cuartos,baños,arealavado,cochera,ubicacion,notaExtra,numeroContacto,usuarioPropietario);
+            Almacenamiento.casas.add(casa);
+            main.setFXML("arrendador-view","homeByDamo - menu principal");
+
+        }else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("rellene todos los campos");
+            alert.showAndWait();
         }
     }
 

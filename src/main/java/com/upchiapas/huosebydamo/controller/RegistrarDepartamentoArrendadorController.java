@@ -4,12 +4,16 @@ package com.upchiapas.huosebydamo.controller;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
 import com.upchiapas.huosebydamo.models.Departamento;
 import com.upchiapas.huosebydamo.main;
+import com.upchiapas.huosebydamo.models.ValidacionDatos;
+import com.upchiapas.huosebydamo.models.ValidateUser;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Button;
 import javafx.fxml.FXML;
 
 public class RegistrarDepartamentoArrendadorController {
+    ValidateUser val = new ValidateUser();
 
     @FXML
     private Button btnRegistroDeDepartamentoArrendador;
@@ -56,13 +60,18 @@ public class RegistrarDepartamentoArrendadorController {
         String ubicacion = idUbicacionDepartamentoArrendador.getText();
         String notaExtra = idNotaExtraDepartamentoArrendador.getText();
         String numeroCotacto = idNumeroDeContactoDepartamentoArrendador.getText();
-        String usuarioPropietario = InicioSesionController.useringresado;
-        Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto,usuarioPropietario);
-        Almacenamiento.departamentos.add(departamento);
-        main.setFXML("arrendador-view","homeByDamo - Arrendador View");
-        for (int i=0; i<Almacenamiento.departamentos.size();i++){
-            System.out.println(Almacenamiento.departamentos.get(i).toString());
+        String usuarioPropietario = InicioSesionArrendadorController.useringresado;
+        if (val.datosVacios(baños,internet,semiamublado,clima,ubicacion,notaExtra,numeroCotacto)==true){
+            Departamento departamento = new Departamento(dimensiones,baños,internet,semiamublado,limiteDePersonas,clima,ubicacion,notaExtra,numeroCotacto,usuarioPropietario);
+            Almacenamiento.departamentos.add(departamento);
+            main.setFXML("arrendador-view","homeByDamo - Arrendador View");
+
+        }else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("rellene todos los campos");
+            alert.showAndWait();
         }
+
     }
 
     @FXML

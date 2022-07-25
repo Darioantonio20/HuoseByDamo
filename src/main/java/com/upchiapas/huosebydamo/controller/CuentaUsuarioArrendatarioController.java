@@ -25,11 +25,11 @@ public class CuentaUsuarioArrendatarioController {
         String fulltext ="";
         String fulltext2= "";
         for (int i = 0; i< Almacenamiento.datausers.size(); i++){
-            if (InicioSesionController.useringresado.equals(Almacenamiento.datausers.get(i).getNombreUsuario())){
+            if (InicioSesionArrendatarioController.useringresado.equals(Almacenamiento.datausers.get(i).getNombreUsuario())){
                 textAreaMiCuentaArrendatario.setText(Almacenamiento.datausers.get(i).toString());
-                if (InicioSesionController.useringresado.equals(Almacenamiento.casas.get(i).getUsuarioPropietario())){
+                if (InicioSesionArrendatarioController.useringresado.equals(Almacenamiento.casas.get(i).getUsuarioPropietario())){
                     fulltext2 += Almacenamiento.casas.get(i).toString();
-                    if(InicioSesionController.useringresado.equals(Almacenamiento.departamentos.get(i).getUsuarioPropietario())){
+                    if(InicioSesionArrendatarioController.useringresado.equals(Almacenamiento.departamentos.get(i).getUsuarioPropietario())){
                         fulltext2 += Almacenamiento.departamentos.get(i).toString();
                     }
                 }
