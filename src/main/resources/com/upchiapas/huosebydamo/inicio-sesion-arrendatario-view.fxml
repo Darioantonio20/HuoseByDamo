@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.InicioSesionArrendatarioController">
+   <children>
+      <Label layoutX="20.0" layoutY="192.0" prefHeight="27.0" prefWidth="335.0" text="Nombre de usuario" textFill="#673bb7">
+         <font>
+            <Font name="Microsoft Sans Serif" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameArrendatario" alignment="CENTER" layoutX="20.0" layoutY="235.0" prefHeight="48.0" prefWidth="335.0" promptText="Ingrese su nombre de usuario" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="21.0" layoutY="320.0" prefHeight="27.0" prefWidth="335.0" text="Contraseña" textFill="#673bb7">
+         <font>
+            <Font name="Microsoft Sans Serif" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEntradaArrendatario" layoutX="90.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#btnEntradaArrendatarioOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="282.0" fitWidth="334.0" layoutX="21.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/The_Little_Thing_UI_Design.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.89" fitWidth="375.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Rectangle.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="7.0" prefHeight="60.0" prefWidth="326.0" text="Iniciar sesión arrendatario" textAlignment="CENTER" textFill="#a47eeb">
+         <font>
+            <Font name="PT Mono Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passArrendatario" alignment="CENTER" layoutX="20.0" layoutY="362.0" maxWidth="335.0" prefHeight="48.0" prefWidth="334.0" promptText="Ingrese su contraseña" style="-fx-background-radius: 40;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Pane layoutX="115.0" layoutY="793.0" prefHeight="10.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-background-radius: 5;" />
+      <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="11.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Flecha_atras.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSalidaInicioSesionArrendatario" layoutX="8.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#btnSalidaInicioSesionArrendatarioOnMouseClicked" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: 000000;" />
+   </children>
+</AnchorPane>

@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroCasaController">
+<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistrarCasaArrendadorController">
    <children>
       <Label layoutX="19.0" layoutY="94.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa dimensiones de la casa " textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idDimencionesCasa" alignment="CENTER" layoutX="19.0" layoutY="125.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Dimensiones en metros cuadrados" style="-fx-background-radius: 40;">
+      <TextField fx:id="idDimencionesCasaArrendadoir" alignment="CENTER" layoutX="19.0" layoutY="125.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Dimensiones en metros cuadrados" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -26,7 +26,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegistroDeCasa" layoutX="91.0" layoutY="702.0" mnemonicParsing="false" onMouseClicked="#btnRegistroCasaOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar casa" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnRegistroDeCasaArrendador" layoutX="91.0" layoutY="702.0" mnemonicParsing="false" onMouseClicked="#btnRegistroCasaArrendadorOnMouseClicked" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar casa" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
@@ -41,9 +41,9 @@
             <Image url="@image/Rectangle.png" />
          </image>
       </ImageView>
-      <Label layoutX="71.0" layoutY="1.0" prefHeight="60.0" prefWidth="246.0" text="Registrar casa" textAlignment="CENTER" textFill="#a47eeb">
+      <Label layoutX="71.0" layoutY="1.0" prefHeight="60.0" prefWidth="304.0" text="Registrar casa arrendador" textAlignment="CENTER" textFill="#a47eeb">
          <font>
-            <Font name="PT Mono Bold" size="28.0" />
+            <Font name="PT Mono Bold" size="15.0" />
          </font>
       </Label>
       <Label layoutX="18.0" layoutY="226.0" prefHeight="27.0" prefWidth="335.0" text="¿Cantidad de cuartos de la casa? " textAlignment="CENTER" textFill="#673bb7">
@@ -51,7 +51,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idNumeroDeCuartosCasa" alignment="CENTER" layoutX="22.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="ingrese el número de cuartos " style="-fx-background-radius: 40;">
+      <TextField fx:id="idNumeroDeCuartosCasaArrendador" alignment="CENTER" layoutX="22.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="ingrese el número de cuartos " style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -66,7 +66,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idAreaDeLavadoCasa" alignment="CENTER" layoutX="20.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese sí o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idAreaDeLavadoCasaArrendador" alignment="CENTER" layoutX="20.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese sí o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -81,7 +81,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idUbicacionCasa" alignment="CENTER" layoutX="26.0" layoutY="513.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
+      <TextField fx:id="idUbicacionCasaArrendador" alignment="CENTER" layoutX="26.0" layoutY="513.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -96,27 +96,27 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idNumeroDePisosCasa" alignment="CENTER" layoutX="20.0" layoutY="195.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de pisos" style="-fx-background-radius: 40;">
+      <TextField fx:id="idNumeroDePisosCasaArrendador" alignment="CENTER" layoutX="20.0" layoutY="195.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de pisos" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idCantidadDeBañosCasa" alignment="CENTER" layoutX="22.0" layoutY="316.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="ingrese el número de baños" style="-fx-background-radius: 40;">
+      <TextField fx:id="idCantidadDeBañosCasaArrendador" alignment="CENTER" layoutX="22.0" layoutY="316.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="ingrese el número de baños" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idCocheraCasa" alignment="CENTER" layoutX="23.0" layoutY="448.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese sí o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idCocheraCasaArrendador" alignment="CENTER" layoutX="23.0" layoutY="448.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese sí o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idNotaExtraCasa" alignment="CENTER" layoutX="21.0" layoutY="578.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa una nota extra" style="-fx-background-radius: 40;">
+      <TextField fx:id="idNotaExtraCasaArrendador" alignment="CENTER" layoutX="21.0" layoutY="578.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa una nota extra" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idNumeroDeContactoCasa" alignment="CENTER" layoutX="26.0" layoutY="644.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa número" style="-fx-background-radius: 40;">
+      <TextField fx:id="idNumeroDeContactoCasaArrendador" alignment="CENTER" layoutX="26.0" layoutY="644.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa número" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -126,9 +126,9 @@
             <Image url="@image/Flecha_atras.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSalidaRegistroCasa" layoutX="21.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroCasaOnMouseClicked" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: 000000;" />
+      <Button fx:id="btnSalidaRegistroCasaArrendador" layoutX="21.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroCasaArrendadorOnMouseClicked" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color: 000000;" />
       <Pane layoutX="115.0" layoutY="793.0" prefHeight="10.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-background-radius: 5;" />
-      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="319.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="326.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/Casita1.png" />
          </image>

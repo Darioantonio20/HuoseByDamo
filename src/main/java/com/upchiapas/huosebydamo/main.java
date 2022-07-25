@@ -3,10 +3,10 @@ package com.upchiapas.huosebydamo;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import java.io.IOException;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 
 public class main extends Application {
     private  static Stage stage;

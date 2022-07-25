@@ -16,9 +16,6 @@ public class CasaController {
     private Button btnMostrarCasa;
 
     @FXML
-    private Button btnOfertarCasa;
-
-    @FXML
     private Button btnSalida;
 
     @FXML
@@ -30,8 +27,6 @@ public class CasaController {
     @FXML
     private TextField textFieldFiltroUbicacionCasa;
 
-    @FXML
-    private TextField textfieldRegistroIdCasa;
     @FXML
     void btnMostrarCasaOnClickedMouse(MouseEvent event) {
         String fulltext = "";
@@ -52,14 +47,9 @@ public class CasaController {
     }
 
     @FXML
-    void btnOfertarCasaOnMouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
     void btnSalidaOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("home-page-view","House By DAMO - Home Page ");
+        main.setFXML("arrendatario-view","House By DAMO - Home Page ");
 
     }
 }

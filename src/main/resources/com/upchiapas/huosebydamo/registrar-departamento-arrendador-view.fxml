@@ -6,16 +6,17 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistroDepartamentoController">
+<AnchorPane prefHeight="88.69" prefWidth="375.0" style="-fx-background-color: FFE1E1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.RegistrarDepartamentoArrendadorController">
    <children>
       <Label layoutX="19.0" layoutY="94.0" prefHeight="27.0" prefWidth="335.0" text="Ingresa dimensiones del departamento" textAlignment="CENTER" textFill="#673bb7">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idDimencionesDepartamento" alignment="CENTER" layoutX="19.0" layoutY="125.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Dimensiones en metros cuadrados" style="-fx-background-radius: 40;">
+      <TextField fx:id="idDimencionesDepartamentoArrendador" alignment="CENTER" layoutX="19.0" layoutY="125.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Dimensiones en metros cuadrados" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -25,7 +26,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegistroDeDepartamento" layoutX="66.0" layoutY="701.0" mnemonicParsing="false" onMouseClicked="#btnRegistroDepartamentoOnMouseClicked" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar departamento" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnRegistroDeDepartamentoArrendador" layoutX="66.0" layoutY="701.0" mnemonicParsing="false" onMouseClicked="#btnRegistroDepartamentoArrendadorOnMouseClicked" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: A680E8; -fx-background-radius: 40;" text="Registrar departamento" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
@@ -40,9 +41,9 @@
             <Image url="@image/Rectangle.png" />
          </image>
       </ImageView>
-      <Label layoutX="57.0" layoutY="1.0" prefHeight="60.0" prefWidth="313.0" text="Registrar departamento" textAlignment="CENTER" textFill="#a47eeb">
+      <Label layoutX="57.0" layoutY="1.0" prefHeight="60.0" prefWidth="313.0" text="Registrar departamento arrendador" textAlignment="CENTER" textFill="#a47eeb">
          <font>
-            <Font name="PT Mono Bold" size="23.0" />
+            <Font name="PT Mono Bold" size="15.0" />
          </font>
       </Label>
       <Label layoutX="18.0" layoutY="226.0" prefHeight="27.0" prefWidth="335.0" text="¿Cuentas con internet? " textAlignment="CENTER" textFill="#673bb7">
@@ -50,7 +51,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idInternetDepartamento" alignment="CENTER" layoutX="19.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idInternetDepartamentoArrendador" alignment="CENTER" layoutX="19.0" layoutY="254.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -65,7 +66,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idCapacidadMaximaDepartamento" alignment="CENTER" layoutX="18.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de personas" style="-fx-background-radius: 40;">
+      <TextField fx:id="idCapacidadMaximaDepartamentoArrendador" alignment="CENTER" layoutX="18.0" layoutY="382.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese el número de personas" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -80,7 +81,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idUbicacionDepartamento" alignment="CENTER" layoutX="15.0" layoutY="514.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
+      <TextField fx:id="idUbicacionDepartamentoArrendador" alignment="CENTER" layoutX="15.0" layoutY="514.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese municipio" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -95,27 +96,27 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="idBañosDepartamento" alignment="CENTER" layoutX="15.0" layoutY="189.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idBañosDepartamentoArrendador" alignment="CENTER" layoutX="15.0" layoutY="189.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idSemiAmuebladoDepartamento" alignment="CENTER" layoutX="15.0" layoutY="315.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idSemiAmuebladoDepartamentoArrendador" alignment="CENTER" layoutX="15.0" layoutY="315.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idClimaDepartamento" alignment="CENTER" layoutX="15.0" layoutY="447.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
+      <TextField fx:id="idClimaDepartamentoArrendador" alignment="CENTER" layoutX="15.0" layoutY="447.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese si o no" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idNotaExtraDepartamento" alignment="CENTER" layoutX="15.0" layoutY="577.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese una nota extra" style="-fx-background-radius: 40;">
+      <TextField fx:id="idNotaExtraDepartamentoArrendador" alignment="CENTER" layoutX="15.0" layoutY="577.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingrese una nota extra" style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="idNumeroDeContactoDepartamento" alignment="CENTER" layoutX="19.0" layoutY="643.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa número " style="-fx-background-radius: 40;">
+      <TextField fx:id="idNumeroDeContactoDepartamentoArrendador" alignment="CENTER" layoutX="19.0" layoutY="643.0" maxWidth="335.0" prefHeight="30.0" prefWidth="350.0" promptText="Ingresa número " style="-fx-background-radius: 40;">
          <font>
             <Font size="16.0" />
          </font>
@@ -130,6 +131,7 @@
             <Image url="@image/Bike.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSalidaRegistroDepartamento" layoutX="18.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroDepartamentoOnMouseClicked" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: 000000;" />
+      <Button fx:id="btnSalidaRegistroDepartamentoArrendador" layoutX="18.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#btnSalidaRegistroDepartamentoArrendadorOnMouseClicked" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: 000000;" />
+      <Pane layoutX="115.0" layoutY="793.0" prefHeight="10.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-background-radius: 5;" />
    </children>
 </AnchorPane>

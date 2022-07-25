@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="812.0" prefWidth="372.0" style="-fx-background-color: A9EBE8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.huosebydamo.controller.ArrendadorController">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="375.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Rectangle_121.png" />
+         </image>
+      </ImageView>
+      <Text fill="#19c6bd" layoutX="12.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Huose by DAMO">
+         <font>
+            <Font name="Monaco" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="175.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat">
+         <font>
+            <Font name="Monaco" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#a47eeb" layoutX="239.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos del usuario">
+         <font>
+            <Font name="Monaco" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#551ac9" layoutX="20.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Un arrendador siempre buscará dar el mejor servicio " />
+      <Text fill="#551ac9" layoutX="83.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="para sus arrendatarios al igual que comodidad" />
+      <ImageView fitHeight="121.0" fitWidth="74.0" layoutX="317.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Palz_Sitting_Chair.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="idCasa" layoutX="20.0" layoutY="346.0" prefHeight="202.0" prefWidth="335.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 10;">
+         <children>
+            <Text fill="#19c6bd" layoutX="2.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="237.0" layoutX="49.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/casa_malcolm.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegistrarDepartamentoArrendador" layoutX="-8.0" layoutY="186.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onMouseClicked="#btnRegistrarDepartamentoArrendadorOnMouseClicked" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #19c6bd;" text="Departamento" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="307.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Star.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="223.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Star.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="244.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Star.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="265.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Star.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegistrarCasaArrendador" layoutX="225.0" layoutY="183.0" maxHeight="36.0" maxWidth="119.0" mnemonicParsing="false" onMouseClicked="#btnRegistrarCasaArrendadorOnMouseClicked" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #19c6bd#19c6bd;" text="Casa" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="idCerrarSesionArrendador" layoutX="13.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#idCerrarSesionArrendadorOnMouseClicked" style="-fx-background-radius: 40; -fx-background-color: #F07373;" text="Cerrar Sesión" textFill="WHITE" />
+      <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="287.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Logo_User.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRegistroVisualizacionUsuarioArrendador" layoutX="284.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#btnRegistroVisualizacionUsuarioArrendadorOnMouseClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: 000000;" />
+      <Pane layoutX="115.0" layoutY="793.0" prefHeight="10.0" prefWidth="150.0" style="-fx-background-color: #17202a #17202a #17202a; -fx-background-radius: 50;" />
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="307.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Star.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="172.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Correo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

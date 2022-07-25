@@ -1,22 +1,22 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
-import com.upchiapas.huosebydamo.models.Usuario;
 import com.upchiapas.huosebydamo.models.ValidateUser;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
+import com.upchiapas.huosebydamo.models.Usuario;
 import javafx.scene.control.PasswordField;
+import com.upchiapas.huosebydamo.main;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
-
+import javafx.scene.control.Button;
+import javafx.scene.control.Alert;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import java.io.IOException;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.fxml.FXML;
+
 
 public class RegistroController {
     @FXML
@@ -55,7 +55,10 @@ public class RegistroController {
             Usuario user = new Usuario(nombre,apellidos,correoElectronico,numeroTelefono,nombreUsuario,contraseña);
             Almacenamiento.datausers.add(user);
             InicioSesionController.useringresado =nombreUsuario;
-            main.setFXML("home-page-view","homeByDamo - menu principal");
+            main.setFXML("home-view","homeByDamo - menu principal");
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("Registro exitoso    ¡¡¡Inicia sesión ahora!!!");
+            alert.showAndWait();
         }else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText("verifique sus datos");
@@ -65,6 +68,8 @@ public class RegistroController {
 
     @FXML
     void btnSalidaRegistroOnMouseClicked(MouseEvent event) {
+
         main.setFXML("home-view","homeByDamo - Home View");
+
     }
 }

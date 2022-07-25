@@ -1,11 +1,11 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.Almacenamiento;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
+import com.upchiapas.huosebydamo.main;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.fxml.FXML;
 
@@ -15,9 +15,6 @@ public class DepartamentoController {
     private Button btnMostrarCasa;
 
     @FXML
-    private Button btnOfertarDepartamento;
-
-    @FXML
     private Button btnsalida;
 
     @FXML
@@ -25,9 +22,6 @@ public class DepartamentoController {
 
     @FXML
     private TextField textfieldFiltroUbicacion;
-
-    @FXML
-    private TextField textfieldRegistroIdDepartamento;
 
     @FXML
     private TextArea txtAreaDepartamentos;
@@ -52,15 +46,10 @@ public class DepartamentoController {
         }
     }
 
-
-    @FXML
-    void btnOfertarDepartamentoOnMouseClicked(MouseEvent event) {
-
-    }
     @FXML
     void btnsalidaOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("home-page-view","House By DAMO - Home Page ");
+        main.setFXML("arrendatario-view","House By DAMO - Home Page ");
 
     }
 }

@@ -1,20 +1,20 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.ValidateUser;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import com.upchiapas.huosebydamo.main;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
-
+import javafx.scene.control.Button;
+import javafx.scene.control.Alert;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import java.io.IOException;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.fxml.FXML;
+
 
 public class InicioSesionController {
    public static String useringresado;
@@ -52,6 +52,8 @@ public class InicioSesionController {
     }
     @FXML
     void btnSalidaInicioSesionOnMouseClicked(MouseEvent event) {
+
         main.setFXML("home-view","homeByDamo - Home View");
+
     }
 }

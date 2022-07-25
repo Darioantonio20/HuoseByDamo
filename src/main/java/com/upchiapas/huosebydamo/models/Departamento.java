@@ -110,16 +110,16 @@ public class Departamento {
         return
                 "///////////////////////////////////////////////////////////////////////////////////////////\n" +
                         "                                            Departamento                              " +"\n\n"+
-                        " Dimensiones del departamento  =-:-:-=  " + dimensiones + "\n"+
-                        " Tiene baños  =-:-:-=  " + baños +"\n"+
-                        " Tiene internet  =-:-:-=  " + internet +"\n"+
-                        " Esta semi-amueblabo  =-:-:-=  " + semiamublado +"\n"+
-                        " Número de limite de personas  =-:-:-=  " + limiteDePersonas + "\n"+
-                        " Tiene clima  =-:-:-=  " + clima + "\n"+
-                        " Úbicacion  =-:-:-=  " + ubicacion + "\n"+
-                        " Nota extra  =-:-:-=  " + notaExtra + "\n"+
-                        " Número de contacto del arrendador  =-:-:-=  " + numeroCotacto + "\n"+
-                        "Usuario propietario: "+ usuarioPropietario + "\n" +
+                        " Dimensiones del departamento: " + dimensiones + "\n"+
+                        " Tiene baños: " + baños +"\n"+
+                        " Tiene internet: " + internet +"\n"+
+                        " Esta semi-amueblabo: " + semiamublado +"\n"+
+                        " Número de limite de personas: " + limiteDePersonas + "\n"+
+                        " Tiene clima: " + clima + "\n"+
+                        " Úbicacion: " + ubicacion + "\n"+
+                        " Nota extra: " + notaExtra + "\n"+
+                        " Número de contacto del arrendador: " + numeroCotacto + "\n"+
+                        " Usuario propietario: "+ usuarioPropietario + "\n" +
                         "///////////////////////////////////////////////////////////////////////////////////////////";
 
     }
