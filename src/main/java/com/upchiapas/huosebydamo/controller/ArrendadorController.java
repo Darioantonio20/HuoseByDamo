@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.fxml.FXML;
 
 public class ArrendadorController {
-
+//merlini
     @FXML
     private Button btnRegistrarCasaArrendador;
 
