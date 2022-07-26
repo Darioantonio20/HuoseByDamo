@@ -8,32 +8,22 @@ import javafx.fxml.FXML;
 public class IniciarsesionComoController {
 
     @FXML
-    private Button btnIniciarSesionAmbas;
-
-    @FXML
     private Button btnIniciarSesionArrendador;
 
     @FXML
     private Button btnIniciarSesionArrendatario;
 
     @FXML
-    void btnIniciarSesionAmbasOnMouseClicked(MouseEvent event) {
-
-        main.setFXML("registro-view","homeByDamo - Home Page");
-
-    }
-
-    @FXML
     void btnIniciarSesionArrendadorOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("inicio-sesion-arrendador-view","homeByDamo - Home Page");
+        main.setFXML("inicio-sesion-arrendador-view","homeByDamo - Inicio Sesión Arrendador ");
 
     }
 
     @FXML
     void btnIniciarSesionArrendatarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("inicio-sesion-arrendatario-view","homeByDamo - Registro arrendatario");
+        main.setFXML("inicio-sesion-arrendatario-view","homeByDamo - Inicio Sesión Arrendatario ");
 
     }
 }

@@ -39,7 +39,7 @@ public class InicioSesionController {
             alert.setContentText("Bienvenido a House By DAMO");
             alert.showAndWait();
             useringresado = userName.getText();
-            main.setFXML("home-page-view","homeByDamo - menu principal");
+            main.setFXML("home-page-view","homeByDamo - Home Page View");
 
         }else{
 
@@ -53,7 +53,7 @@ public class InicioSesionController {
     @FXML
     void btnSalidaInicioSesionOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("home-view","homeByDamo - Home View");
+        main.setFXML("home-view","homeByDamo - Home View ");
 
     }
 }

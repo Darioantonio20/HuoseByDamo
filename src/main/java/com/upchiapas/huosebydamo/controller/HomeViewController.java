@@ -26,7 +26,7 @@ public class HomeViewController {
     @FXML
     void sesionIniciar(ActionEvent event) throws IOException {
 
-       main.setFXML("iniciar-sesion-como-view","homeByDamo -iniciar sesion");
+       main.setFXML("iniciar-sesion-como-view","homeByDamo - Iniciar Sesión ");
 
         Almacenamiento.datausers.add(new Usuario("José Ángel","Merlin Ortega","gege@gmail.com","9515271070","angelxmxx","1234"));
         Almacenamiento.datausers.add(new Usuario("Darío Antonio","Gutiérrez Álvarez","antoniodario10@hotmail.com","9514795475","gtzdario","4321"));
@@ -36,7 +36,7 @@ public class HomeViewController {
     @FXML
     void registroAhora(ActionEvent event) throws IOException {
 
-        main.setFXML("registro-view","homeByDamo - registro usuario");
+        main.setFXML("registro-view","homeByDamo - Registro View ");
 
     }
 }

@@ -49,7 +49,7 @@ public class CasaController {
     @FXML
     void btnSalidaOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("arrendatario-view","House By DAMO - Home Page ");
+        main.setFXML("arrendatario-view","House By DAMO - Arrendatario View ");
 
     }
 }

@@ -26,21 +26,21 @@ public class ArrendatarioController {
     @FXML
     void btnRegistroVisualizacionUsuarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("cuenta-usuario-arrendatario-view","homeByDamo - Cuenta De Usuario ");
+        main.setFXML("cuenta-usuario-arrendatario-view","homeByDamo - Cuenta Usuario Arrendatario");
 
     }
 
     @FXML
     void btnVisualizarCasaArrendatarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("casa-view","homeByDamo - Visualización De Casa ");
+        main.setFXML("casa-view","homeByDamo - Casa View ");
 
     }
 
     @FXML
     void btnVisualizarDepartamentoArrendatarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("departamento-view","homeByDamo - Visualización De Departamento ");
+        main.setFXML("departamento-view","homeByDamo - Departamento View ");
 
     }
 

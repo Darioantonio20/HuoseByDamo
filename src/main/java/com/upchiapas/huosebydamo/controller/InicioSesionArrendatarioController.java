@@ -1,13 +1,13 @@
 package com.upchiapas.huosebydamo.controller;
 
-import com.upchiapas.huosebydamo.main;
 import com.upchiapas.huosebydamo.models.ValidateUser;
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import com.upchiapas.huosebydamo.main;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Alert;
+import javafx.fxml.FXML;
 
 public class InicioSesionArrendatarioController {
 
@@ -35,7 +35,7 @@ public class InicioSesionArrendatarioController {
             alert.setContentText("Bienvenido a House By DAMO");
             alert.showAndWait();
             useringresado = userNameArrendatario.getText();
-            main.setFXML("arrendatario-view","homeByDamo - menu principal");
+            main.setFXML("arrendatario-view","homeByDamo - Arrendatario View ");
 
         }else{
 
@@ -45,15 +45,12 @@ public class InicioSesionArrendatarioController {
             alert.showAndWait();
 
         }
-
-
-
     }
 
     @FXML
     void btnSalidaInicioSesionArrendatarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("home-view","homeByDamo - Home View");
+        main.setFXML("home-view","homeByDamo - Home View ");
 
     }
 }

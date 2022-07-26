@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.fxml.FXML;
 
 public class ArrendadorController {
-//merlini
+
     @FXML
     private Button btnRegistrarCasaArrendador;
 
@@ -26,21 +26,21 @@ public class ArrendadorController {
     @FXML
     void btnRegistrarCasaArrendadorOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("registrar-casa-arrendador-view","homeByDamo - Registro Casa");
+        main.setFXML("registrar-casa-arrendador-view","homeByDamo - Registrar Casa Arrendador");
 
     }
 
     @FXML
     void btnRegistrarDepartamentoArrendadorOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("registrar-departamento-arrendador-view","homeByDamo - Registro Departamento");
+        main.setFXML("registrar-departamento-arrendador-view","homeByDamo - Registrar Departamento Arrendador");
 
     }
 
     @FXML
     void btnRegistroVisualizacionUsuarioArrendadorOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("cuenta-usuario-arrendador-view","homeByDamo - Cuenta De Usuario Arrendador ");
+        main.setFXML("cuenta-usuario-arrendador-view","homeByDamo - Cuenta Usuario Arrendador ");
 
     }
 

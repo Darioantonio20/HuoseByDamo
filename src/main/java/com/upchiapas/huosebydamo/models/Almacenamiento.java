@@ -9,6 +9,4 @@ public class Almacenamiento {
    public static ArrayList<Casa> casas = new ArrayList<>();
    public static ArrayList<Departamento> departamentos = new ArrayList<>();
 
-
-
 }

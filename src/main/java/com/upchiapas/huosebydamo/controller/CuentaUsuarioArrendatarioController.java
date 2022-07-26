@@ -18,9 +18,6 @@ public class CuentaUsuarioArrendatarioController {
     private TextArea textAreaMiCuentaArrendatario;
 
     @FXML
-    private TextArea textAreaRegistroInmuebleArrendatario;
-
-    @FXML
     void btnMostrarArrendatarioOnMouseClicked(MouseEvent event) {
         String fulltext ="";
         String fulltext2= "";
@@ -35,14 +32,12 @@ public class CuentaUsuarioArrendatarioController {
                 }
             }
         }
-        textAreaRegistroInmuebleArrendatario.setText(fulltext2);
-
     }
 
     @FXML
     void returnHomeArrendatarioOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("arrendatario-view","homeByDamo - Vista Arrendatario");
+        main.setFXML("arrendatario-view","homeByDamo - Arrendatario View ");
 
     }
 

@@ -44,7 +44,7 @@ public class CuentaUsuarioArrendadorController {
     @FXML
     void returnHomeArrendadorOnMouseClicked(MouseEvent event) {
 
-        main.setFXML("arrendador-view","homeByDamo - Vista Arrendador");
+        main.setFXML("arrendador-view","homeByDamo - Arrendador View ");
 
     }
 }
